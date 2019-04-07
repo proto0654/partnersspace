@@ -14,12 +14,14 @@ var gulp          = require('gulp'),
 		rsync         = require('gulp-rsync');
 
 gulp.task('browser-sync', function() {
-	browsersync({
-		proxy: "https://proto0654.github.io/partnersspace/",
+	browserSync({
+		server: {
+			baseDir: './'
+		},
 		notify: false,
 		// open: false,
-		// tunnel: true,
-		// tunnel: "projectname", //Demonstration page: http://projectname.localtunnel.me
+		// online: false, // Work Offline Without Internet Connection
+		// tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
 	})
 });
 
@@ -68,7 +70,7 @@ if (gulpversion == 3) {
 	gulp.task('watch', ['styles', 'scripts', 'browser-sync'], function() {
 		gulp.watch('app/'+syntax+'/**/*.'+syntax+'', ['styles']);
 		gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['scripts']);
-		gulp.watch('app/*.html', ['code'])
+		gulp.watch('./*.html', ['code'])
 	});
 	gulp.task('default', ['watch']);
 }
@@ -77,7 +79,7 @@ if (gulpversion == 4) {
 	gulp.task('watch', function() {
 		gulp.watch('app/'+syntax+'/**/*.'+syntax+'', gulp.parallel('styles'));
 		gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('scripts'));
-		gulp.watch('app/*.html', gulp.parallel('code'))
+		gulp.watch('./*.html', gulp.parallel('code'))
 	});
 	gulp.task('default', gulp.parallel('styles', 'scripts', 'browser-sync', 'watch'));
 }
