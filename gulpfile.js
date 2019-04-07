@@ -14,14 +14,12 @@ var gulp          = require('gulp'),
 		rsync         = require('gulp-rsync');
 
 gulp.task('browser-sync', function() {
-	browserSync({
-		server: {
-			baseDir: 'app'
-		},
+	browsersync({
+		proxy: "https://proto0654.github.io/partnersspace/",
 		notify: false,
 		// open: false,
-		// online: false, // Work Offline Without Internet Connection
-		// tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
+		// tunnel: true,
+		// tunnel: "projectname", //Demonstration page: http://projectname.localtunnel.me
 	})
 });
 
