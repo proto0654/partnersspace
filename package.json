@@ -9,7 +9,7 @@
   "author": "WebDesign Master",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.5",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-clean-css": "^4.0.0",
@@ -22,7 +22,9 @@
     "gulp-util": "^3.0.8"
   },
   "dependencies": {
+    "gulp-sourcemaps": "^2.6.5",
     "node-sass": "^4.11.0",
-    "sass": "^1.17.4"
+    "sass": "^1.17.4",
+    "startbootstrap-simple-sidebar": "^5.0.0"
   }
 }
