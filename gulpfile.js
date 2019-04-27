@@ -32,8 +32,8 @@ gulp.task('styles', function () {
 		.pipe(sourcemaps.init())
 		.pipe(rename({ suffix: '.min', prefix: '' }))
 		.pipe(autoprefixer(['last 15 versions']))
-		//.pipe(cleancss({ level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
-		.pipe(sourcemaps.write('app/css'))
+		.pipe(cleancss({ level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
+		.pipe(sourcemaps.write(''))
 		.pipe(gulp.dest('app/css'))
 		.pipe(browserSync.stream())
 });
