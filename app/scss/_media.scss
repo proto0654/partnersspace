@@ -11,6 +11,18 @@
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+    footer, #promo, #page-content-wrapper {
+        overflow: hidden;
+    }
+    #statistic{
+        .nav-item{
+            flex: inherit;
+            width: 50%;
+            a{
+                text-align: center;
+            }
+        }
+    }
     .nav-link--blue {
         background-color: #BDBDBD;
     }
@@ -74,7 +86,7 @@
             justify-content: center;
             height: 120vh;
             margin: 0 auto;
-            padding-bottom: 70%;
+            padding-bottom: 50%;
 
             &-item {
                 .fa {
@@ -83,13 +95,23 @@
                 }
 
                 width: 25vw;
-                height: 18vw;
+                height: 22vw;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 border: inherit;
-                padding: 12px;
+                margin-bottom: 5%;
+
+                &:hover {
+                    &:hover:after {
+                        display: none;
+                    }
+
+                    &:hover:before {
+                        display: none;
+                    }
+                }
             }
         }
     }

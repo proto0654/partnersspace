@@ -63,8 +63,7 @@
               aria-hidden="true"></i>Overview</a>
           <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
               aria-hidden="true"></i>Events</a>
-          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
-              aria-hidden="true"></i>Last element</a>
+
         </div>
       </div>
       <!-- /#sidebar-wrapper -->
@@ -72,7 +71,7 @@
       <!-- Page Content -->
       <div id="page-content-wrapper">
         <nav class="navbar navbar-expand navbar-light bg-transparent row row-sm-reverse mx-1 mt-4">
-          <p class="pl-sm-3 position-absolute d-flex align-items-center justify-content-center justify-content-lg-start"
+          <p class="pl-sm-3 position-absolute d-flex align-items-center justify-content-center justify-content-lg-start condensed"
             id="welcome-row">
             Welcome:
             John Doe
@@ -97,10 +96,10 @@
                 </a>
               </li>
               <li class="ml-1 nav-item">
-                <a class="nav-link nav-link--blue" href="#"><i class="fa fa-envelope p-1" aria-hidden="true"></i></a>
+                <a class="nav-link nav-link--blue hover-shadow--blue" href="#"><i class="fa fa-envelope p-1" aria-hidden="true"></i></a>
               </li>
               <li class="ml-1 nav-item">
-                <a class="nav-link nav-link--blue" href="#"><i class="fa fa-bell p-1" aria-hidden="true"></i></a>
+                <a class="nav-link nav-link--blue hover-shadow--blue" href="#"><i class="fa fa-bell p-1" aria-hidden="true"></i></a>
               </li>
             </ul>
           </div>
@@ -110,77 +109,285 @@
         </nav>
 
         <div class="container-fluid px-4">
-          <h1 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left"><span>Simple Sidebar</span></h1>
-          <p>
-            The starting state of the menu will appear collapsed on smaller
-            screens, and will appear non-collapsed on larger screens. When
-            toggled using the button below, the menu will change.
-          </p>
-          <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-          </div>
+          <h1 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left">
+            <span>Dashboard</span></h1>
 
+          <div class="row d-flex align-items-stretch">
+            <div class="col-12 col-sm-4">
+              <div class="bg-hl-blue d-flex flex-column justify-content-end h-100">
+                <span class="py-3 text-center d-block bg-white h-50">This Month Estimated Commission</span>
+                <span class="h4 py-4 text-center d-block text-warning h-50">US $1334.43</span>
+
+              </div>
+
+
+            </div>
+            <div class="col-12 col-sm-4">
+              <div class="bg-hl-blue d-flex flex-column justify-content-end h-100">
+                <span class="py-3 text-center d-block bg-white h-50">Last Month Estimated Commission</span>
+                <span class="h4 py-4 text-center d-block text-primary h-50">US $934.43</span>
+
+              </div>
+            </div>
+            <div class="col-12 col-sm-4">
+              <div class="bg-hl-blue d-flex flex-column justify-content-end h-100">
+                <span class="py-3 text-center d-block bg-white h-50">Account Balance</span>
+                <span class="h4 py-4 text-center d-block text-primary h-50">US $134.43</span>
+                <div class="position-absolute blue-grad hover-shadow--blue" id="cash-out">
+                  <a href="#">
+                    <div class="row w-100 px-0 mx-0">
+                      <div class="col-8 d-flex align-items-center px-0">
+                        <span class="d-block text-center text-white w-100">
+                          Cashout
+                        </span>
+                      </div>
+                      <div class="col-4 py-2 bg-darkblue d-flex justify-content-center align-items-center">
+                        <img src="app/img/icons/cash-out.svg" width="20" height="20" alt=""></div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="row mt-5 mt-sm-2 d-flex align-items-stretch flex-wrap">
+            <div class="col-12 col-lg-8">
+              <h4 class="mt-4 ml-2 mb-3 text-uppercase title-underlined title-underlined--left">
+                <span>Ваши доходы</span></h4>
+              <div id="statistic" class="block-shadow">
+                <section class="container pt-2 pb-5">
+                  <div class="row">
+                    <div class="col-md-12 px-0">
+
+                      <ul id="tabsJustified" class="nav nav-tabs justify-content-center">
+                        <li class="nav-item"><a href="" data-target="#ystd" data-toggle="tab"
+                            class="condensed nav-link small text-uppercase">Вчера</a></li>
+                        <li class="nav-item"><a href="" data-target="#last-w" data-toggle="tab"
+                            class="condensed nav-link small text-uppercase active">За неделю</a></li>
+                        <li class="nav-item"><a href="" data-target="#mnth" data-toggle="tab"
+                            class="condensed nav-link small text-uppercase">За месяц</a></li>
+                        <li class="nav-item"><a href="" data-target="#year" data-toggle="tab"
+                            class="condensed nav-link small text-uppercase">За год</a>
+                        </li>
+                      </ul>
+                      <br>
+                      <div id="tabsJustifiedContent" class="tab-content">
+                        <div id="ystd" class="tab-pane fade">
+                          <div class="row">
+                            <div class="col-2">
+
+                            </div>
+                            <div class="col-10">
+                              <img src="app/img/statistics/Chart@2x-1.png" width="100%" alt="">
+                            </div>
+                          </div>
+
+                        </div>
+                        <div id="last-w" class="tab-pane fade active show">
+                          <img src="app/img/statistics/Chart@2x-2.png" width="100%" alt="">
+                        </div>
+                        <div id="mnth" class="tab-pane fade">
+                          <img src="app/img/statistics/Chart@2x-3.png" width="100%" alt="">
+                        </div>
+                        <div id="year" class="tab-pane fade">
+                          <img src="app/img/statistics/Chart@2x-2.png" width="100%" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 mt-5">
+              <div id="promo" class="py-4 block-shadow">
+                <h5 class="title-underlined title-underlined--left text-uppercase ml-2 mb-3">
+                  <span>Promocodes</span>
+                </h5>
+                <ul class="list-group border-0">
+
+                  <li class="list-group-item border-0">
+                    <a href="#" class="">
+                      <div class="row p-0  ml-2">
+                        <div class="col-2 pl-0 pr-3 d-flex align-items-center">
+                          <i class="fa mr-2 fa-envelope"></i>
+                        </div>
+                        <div class="col-10">
+                          <span class="h6 d-block text-dark mb-0">Shortcuts</span>
+                          <span class="d-block mb-0"><i class="fa fa-map-marker mr-1"></i>Kalsel - Indonesia</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="#" class="">
+                      <div class="row p-0  ml-2">
+                        <div class="col-2 pl-0 pr-3 d-flex align-items-center">
+                          <i class="fa mr-2 fa-user"></i>
+                        </div>
+                        <div class="col-10">
+                          <span class="h6 d-block text-dark mb-0">Shortcuts</span>
+                          <span class="d-block mb-0"><i class="fa fa-map-marker mr-1"></i>Kalsel - Indonesia</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="#" class="">
+                      <div class="row p-0  ml-2">
+                        <div class="col-2 pl-0 pr-3 d-flex align-items-center">
+                          <i class="fa mr-2 fa-check-square"></i>
+                        </div>
+                        <div class="col-10">
+                          <span class="h6 d-block text-dark mb-0">Shortcuts</span>
+                          <span class="d-block mb-0"><i class="fa fa-map-marker mr-1"></i>Kalsel - Indonesia</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+          
+                  <li class="list-group-item border-0">
+                    <a href="#" class="">
+                      <div class="row p-0  ml-2">
+                        <div class="col-2 pl-0 pr-3 d-flex align-items-center">
+                          <i class="fa mr-2 fa-check-square"></i>
+                        </div>
+                        <div class="col-10">
+                          <span class="h6 d-block text-dark mb-0">Shortcuts</span>
+                          <span class="d-block mb-0"><i class="fa fa-map-marker mr-1"></i>Kalsel - Indonesia</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="#" class="">
+                      <div class="row p-0  ml-2">
+                        <div class="col-2 pl-0 pr-3 d-flex align-items-center">
+                          <i class="fa mr-2 fa-check-square"></i>
+                        </div>
+                        <div class="col-10">
+                          <span class="h6 d-block text-dark mb-0">Shortcuts</span>
+                          <span class="d-block mb-0"><i class="fa fa-map-marker mr-1"></i>Kalsel - Indonesia</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="#" class="">
+                      <div class="row p-0  ml-2">
+                        <div class="col-2 pl-0 pr-3 d-flex align-items-center">
+                          <i class="fa mr-2 fa-check-square"></i>
+                        </div>
+                        <div class="col-10">
+                          <span class="h6 d-block text-dark mb-0">Shortcuts</span>
+                          <span class="d-block mb-0"><i class="fa fa-map-marker mr-1"></i>Kalsel - Indonesia</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="#" class="">
+                      <div class="row p-0  ml-2">
+                        <div class="col-2 pl-0 pr-3 d-flex align-items-center">
+                          <i class="fa mr-2 fa-check-square"></i>
+                        </div>
+                        <div class="col-10">
+                          <span class="h6 d-block text-dark mb-0">Shortcuts</span>
+                          <span class="d-block mb-0"><i class="fa fa-map-marker mr-1"></i>Kalsel - Indonesia</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-group-item border-0">
+                    <a href="#" class="">
+                      <div class="row p-0  ml-2">
+                        <div class="col-2 pl-0 pr-3 d-flex align-items-center">
+                          <i class="fa mr-2 fa-check-square"></i>
+                        </div>
+                        <div class="col-10">
+                          <span class="h6 d-block text-dark mb-0">Shortcuts</span>
+                          <span class="d-block mb-0"><i class="fa fa-map-marker mr-1"></i>Kalsel - Indonesia</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+
+
+
+
+
+                </ul>
+
+
+
+
+              </div>
+
+            </div>
+          </div>
         </div>
+
+
       </div>
-      <!-- /#page-content-wrapper -->
     </div>
-    <footer id="footer-panel">
-      <div class="container">
-        <div class="row w-100 justify-content-around pt-5 pb-3 mx-0">
-          <div class="col-md-3 px-0 pl-lg-4 text-center text-lg-left my-5 my-sm-0">
-            <nav id="sidebar">
-              <div class="sidebar-header">
-                <h4 class="title-underlined title-underlined--right"><span>Webmasters</span></h4>
-              </div>
+    <!-- /#page-content-wrapper -->
+  </div>
+  <footer id="footer-panel">
+    <div class="container">
+      <div class="row w-100 justify-content-around pt-5 pb-3 mx-0">
+        <div class="col-md-3 px-0 pl-lg-4 text-center text-lg-left my-5 my-sm-0">
+          <nav id="sidebar">
+            <div class="sidebar-header">
+              <h4 class="title-underlined title-underlined--right"><span>Webmasters</span></h4>
+            </div>
 
-              <ul class="list-unstyled components">
-                <li class="active">
-                  <a href="register_affilate.php" data-toggle="collapse" aria-expanded="false">Get started</a>
-                </li>
-                <li>
-                  <a href="#">How to start earning?</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-md-3 px-0  text-center mb-5 my-sm-0">
-            <nav id="sidebar">
-              <div class="sidebar-header">
-                <h4 class="title-underlined"><span>Advertizers</span></h4>
-              </div>
-
-              <ul class="list-unstyled components">
-                <li class="active">
-                  <a href="register.php" data-toggle="collapse" aria-expanded="false">Make a request</a>
-                </li>
-              </ul>
-            </nav>
-            <img src="app/img/dasboard-corner--logo.svg" width="360" height="auto" alt="" class="ml-5 ml-sm-0">
-            <span class="d-block text-center small mt-3 mb-3">All rights reserved.
-              Partnersspace(c)&nbsp;2019</span>
-          </div>
-          <div class="col-md-3 px-0 text-center text-lg-right my-5 my-sm-0">
-            <nav id="sidebar">
-              <div class="sidebar-header">
-                <h4 class="title-underlined title-underlined--left"><span>Contacts</span></h4>
-              </div>
-
-              <a href="mailto: support@partnersspace.com">support@partnersspace.com</a>
-              <br>
-              <a href="mailto: support@partnersspace.com" class="pr-1"><i class="fa fa-skype"></i>
-                Skype</a>
-            </nav>
-
-          </div>
+            <ul class="list-unstyled components">
+              <li class="active">
+                <a href="register_affilate.php" data-toggle="collapse" aria-expanded="false">Get started</a>
+              </li>
+              <li>
+                <a href="#">How to start earning?</a>
+              </li>
+            </ul>
+          </nav>
         </div>
+        <div class="col-md-3 px-0  text-center mb-5 my-sm-0">
+          <nav id="sidebar">
+            <div class="sidebar-header">
+              <h4 class="title-underlined"><span>Advertizers</span></h4>
+            </div>
 
+            <ul class="list-unstyled components">
+              <li class="active">
+                <a href="register.php" data-toggle="collapse" aria-expanded="false">Make a request</a>
+              </li>
+            </ul>
+          </nav>
+          <img src="app/img/dasboard-corner--logo.svg" width="360" height="auto" alt="" class="ml-2 ml-sm-0">
+          <span class="d-block text-center small mt-3 mb-3">All rights reserved.
+            Partnersspace(c)&nbsp;2019</span>
+        </div>
+        <div class="col-md-3 px-0 text-center text-lg-right my-sm-0">
+          <nav id="sidebar">
+            <div class="sidebar-header">
+              <h4 class="title-underlined title-underlined--left"><span>Contacts</span></h4>
+            </div>
 
+            <a href="mailto: support@partnersspace.com">support@partnersspace.com</a>
+            <br>
+            <a href="mailto: support@partnersspace.com" class="pr-1"><i class="fa fa-skype"></i>
+              Skype</a>
+          </nav>
+
+        </div>
       </div>
-    </footer>
 
-    <!-- /#wrapper -->
+
+    </div>
+  </footer>
+
+  <!-- /#wrapper -->
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
