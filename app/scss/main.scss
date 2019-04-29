@@ -149,9 +149,15 @@ body {
 .bg-blue {
     background-color: $accent-blue;
 }
+.text-blue{
+    color: $accent-blue;
+}
 
 .bg-hl-blue {
     background-color: $hl-blue;
+}
+.text-darkblue{
+    color: $accent-darkblue;
 }
 
 //<dashboard>
@@ -179,6 +185,8 @@ body {
         background-image: url(../img/dasboard-corner--triangles.svg);
         background-size: contain;
         background-repeat: no-repeat;
+        pointer-events: none;
+        z-index: -1;
     }
 }
 
@@ -417,5 +425,5 @@ footer {
 
 //</footer>
 //</dashboard>
-
+@import "register-page.scss"; // Always at the end
 @import "media"; // Always at the end
