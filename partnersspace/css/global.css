@@ -97,13 +97,13 @@ small {
     z-index: 500;
 }
 
-.navbar-collapse:not(.dashboard-navbar) {
+#header-panel .navbar-collapse:not(.dashboard-navbar) {
     position: absolute;
     right: 0;
     top: 58px;
 }
 
-.navbar-collapse ul {
+.home .navbar-collapse ul {
     background-color: white;
     width: 200px;
 }

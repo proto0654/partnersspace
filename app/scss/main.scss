@@ -1,7 +1,7 @@
 @import "vars";
 @import "fonts";
 @import "libs";
-
+@import "../../partnersspace/css/global";
 ::-webkit-input-placeholder {color:#89b8ff;}
 ::-moz-placeholder          {color:#89b8ff;}/* Firefox 19+ */
 :-moz-placeholder           {color:#89b8ff;}/* Firefox 18- */
@@ -11,7 +11,6 @@
     background-color: $accent;
     color: #fff;
 }
-
 
 .ovfh {
     overflow: hidden;
