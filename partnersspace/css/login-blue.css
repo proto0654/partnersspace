@@ -1,0 +1,109 @@
+@import url("global.css");
+
+/*<EDIT BOOTSTRAP>*/
+
+.card-header {
+    margin-bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+input {
+    border: 0!important;
+    outline: 0!important;
+    background: transparent!important;
+    border-bottom: 1px solid lightgrey!important;
+}
+
+.form-control-lg {
+    font-size: 14px;
+}
+
+
+/*</EDIT BOOTSTRAP>*/
+
+input[type=checkbox] {
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2);
+    /* IE */
+    -moz-transform: scale(2);
+    /* FF */
+    -webkit-transform: scale(2);
+    /* Safari and Chrome */
+    -o-transform: scale(2);
+    /* Opera */
+    padding: 10px;
+}
+
+body {
+    font-size: 14px;
+}
+
+#page {
+    max-width: 100%;
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+h3 {
+    font-family: Roboto Slab, serif;
+}
+
+.fa {
+    font-size: 1.5rem;
+}
+
+.first,
+.second {
+    position: relative;
+}
+
+.first:before,
+.first:after,
+.second:before,
+.second:after {
+    position: absolute;
+    content: "";
+}
+
+.first:before {
+    top: 0;
+    right: 0px;
+    bottom: -200px;
+    width: 700px;
+    height: 550px;
+    background-image: url(../img/triangles.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+}
+
+.second:before {
+    height: 100vh;
+    width: 70vw;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-10deg) scaleY(1.4);
+    background: linear-gradient(0deg, #E6EFFE 90%, #FFFFFF 103.33%);
+    /* panels-shadow */
+    box-shadow: -20px 4px 200px rgba(1, 79, 122, 0.18);
+    z-index: -20;
+}
+
+.second:after {
+    height: 150vh;
+    width: 70vw;
+    left: -40px;
+    top: 50%;
+    background-size: contain;
+    transform: translateY(-50%) rotate(10deg);
+    box-shadow: -20px 4px 200px rgba(1, 79, 122, 0.18);
+    z-index: -19;
+    background-image: url(../img/polygons.jpg);
+    background-position: -100px;
+}

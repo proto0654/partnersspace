@@ -1,0 +1,241 @@
+@import url("global.css");
+@media (min-width: 1400px){
+    .container {
+        max-width: 70vw;
+    }
+}
+.title-underline{
+    position: relative;
+    margin-bottom: 5%;
+}
+.title-underline:before{
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    background: linear-gradient(90deg, rgba(196, 196, 196, 0) 0%, rgba(45, 156, 219, 0.73) 23.2%, rgba(196, 196, 196, 0) 100%);
+}
+.title-underline-left:before{
+    width: 50vw;
+    height: .3vmin;
+    left: 0;
+}
+.title-underline-center:before{
+    width: 70vw;
+    height: .3vmin;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, rgba(196, 196, 196, 0) 0%, rgba(45, 156, 219, 0.73) 50%, rgba(196, 196, 196, 0) 100%);
+}
+.text-white.title-underline:before{
+    background: linear-gradient(90deg, rgba(196, 196, 196, 0) 0%, rgba(210, 238, 255, 0.836) 50%, rgba(196, 196, 196, 0) 100%);
+}
+.position-absolute.w-100.h-100{
+    content:'';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+section{
+    padding: 70px 0;
+}
+.linear-bg{
+    background: url(../img/hww/Polygon-hww-outline.svg), url(../img/Polygon-linearbg-small.svg), url(../img/Polygon-linearbg-big.svg), linear-gradient(180deg, #C1D6E2 0%, #F2F2F2 100%);
+    background-size: 15%, 40%, 50%, auto;
+    background-position: right 20%, left center, right 100vh;
+    background-repeat: no-repeat;
+}
+.jumbotron{
+    background: url(../img/header-img.png), url(../img/polygon-header-blue.svg), linear-gradient(180deg, #E1E1E1 0%, rgba(255, 255, 255, 0) 100%);
+    background-size: 65%, 30%, auto;
+    background-position: right 10%, left, center;
+    background-repeat: no-repeat;
+}
+#partners .carousel-item i{
+    width: 30px;
+    height: 30px;
+    padding: 7px!important;
+    border-radius: 100px;
+}
+#partners-carousel-header h2{
+    position: relative;
+}
+#partners-carousel-header h2:before{
+    position: absolute;
+    content: "";
+    top: 20%;
+    bottom: 20%;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-60%);
+    background: linear-gradient(90deg, rgba(224, 224, 224, 0) -0.99%, rgba(86, 204, 242, 0.43) 20.92%, rgba(224, 224, 224, 0) 100%);
+    z-index: -3;
+}
+.carousel-control-prev, .carousel-control-next{
+    top: 50%!important;
+    left: 50%!important;
+    transform: translate(-50%, -50%)!important;
+}
+#how-we-work{
+    background-image: url(../img/hww/Polygon-hww.svg), url(../img/hww/Polygon-hww-outline.svg);
+    background-position: left 40vh, right 20%;
+    background-size: 35vw, 20%;
+    background-repeat: no-repeat;
+    padding-bottom: 12%;
+    margin-bottom: -17px;
+}
+#how-we-work .card{
+    margin: 0 -50px;
+    background: linear-gradient(325deg, #F2F2F2 -16.23%, rgba(255, 255, 255, 0) 66.23%);
+}
+#how-we-work .card:nth-of-type(even){
+    transform: translateY(150px);
+}
+#how-we-work .row>img{
+    transform: translateY(-10%)!important;
+}
+#advantages{
+    padding: 100px 0 300px;
+    background: linear-gradient(180deg, #F2F2F2 4.53%, rgba(0, 90, 140, 0.78) 63.08%, rgba(0, 79, 124, 0.67) 100%), url(../img/advantages-bg.jpg);
+    background-size: cover;
+    color: lightgrey;
+    margin-bottom: -300px;
+    position: relative;
+    z-index: 300;
+}
+#advantages .card-header{
+    margin: 0 -25%;
+    margin-bottom: -25px;
+    color: white;
+}
+#advantages .card-header i{
+    font-size: 2.3rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#advantages .card-body{
+    background: linear-gradient(327.57deg, #00263C -16.23%, rgba(0, 0, 0, 0) 66.23%);
+    min-height: 250px;
+}
+#advantages .lil-hex{
+    top: 70%;
+    left:60%;
+}
+#advantages .card-header .card-image-top{
+    
+}
+.card-body{
+    min-height: 250px;
+}
+#tools .container{
+    z-index: 5000;
+}
+#chess h4:after{
+    margin-top: 4px;
+    display: block;
+    content: "";
+    height: .41vmin;
+    background: linear-gradient(90deg, rgba(196, 196, 196, 0) 0%, rgba(45, 156, 219, 0.73) 23.2%, rgba(196, 196, 196, 0) 100%);
+}
+#pay-system{
+    padding-bottom: 20rem;
+    margin-bottom: -12rem;
+}
+#pay-system .card-body{
+    background: linear-gradient(335.59deg, #FFFFFF 0.88%, rgba(255, 255, 255, 0) 82.1%);
+}
+#step-by-step .one-third{
+    height: 500px;
+    min-height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+#step-by-step .one-third:nth-child(1){
+    background-image:  linear-gradient(360deg, rgba(0, 52, 81, 0.83) 0%, rgba(0, 52, 81, 0) 100.94%), url(../img/step-by-step/Rectangle6.jpg);
+}
+#step-by-step .one-third:nth-child(2){
+    background-image:  linear-gradient(360deg, rgba(0, 52, 81, 0.83) 0%, rgba(0, 52, 81, 0) 100.94%), url(../img/step-by-step/Rectangle6-1.jpg);
+}
+#step-by-step .one-third:nth-child(3){
+    background-image: linear-gradient(360deg, rgba(0, 52, 81, 0.83) 0%, rgba(0, 52, 81, 0) 100.94%), url(../img/step-by-step/Rectangle6-2.jpg);    
+    background-position: right;
+}
+#step-by-step .one-third span{
+    font-size: 45vh;
+    color: rgba(0,0,0,.4);
+    top: 35%;
+}
+#step-by-step .one-third .fa{
+    font-size: 6vh;
+    padding-bottom: 1vh;
+}
+@media (min-width: 768px) {
+
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+        display: block;
+    }
+    
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
+}

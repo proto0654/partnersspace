@@ -1,0 +1,46 @@
+.second:before {
+    top: 0;
+    right: 0px;
+    bottom: -200px;
+    width: 700px;
+    height: 550px;
+    background-image: url(../img/triangles-ylw.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+    box-shadow: inherit;
+    transform: rotate(0) translate(0, 0);
+}
+
+.second:after {
+    content: none;
+    background-color: none;
+}
+
+.first:before {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 70vw;
+    right: -20px;
+    top: 50%;
+    left: inherit;
+    transform: translateY(-50%) rotate(10deg) scaleY(1.4);
+    background: linear-gradient(180deg, #ffffff 0%, rgb(255, 252, 59) 103.33%);
+    /* panels-shadow */
+    box-shadow: -20px 4px 200px rgba(255, 230, 0, 0.562);
+    z-index: -20;
+}
+
+.first:after {
+    height: 150vh;
+    width: 70vw;
+    right: 40px;
+    top: 50%;
+    background-size: cover;
+    transform: translateY(-50%) rotate(-10deg);
+    box-shadow: -20px 4px 200px rgba(255, 208, 0, 0.486);
+    z-index: -19;
+    background-image: url(../img/polygons-ylw.jpg);
+    background-position: 200px 200px;
+}

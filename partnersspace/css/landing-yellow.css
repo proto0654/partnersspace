@@ -1,0 +1,83 @@
+@import url("global.css");
+@import url("landing-blue.css");
+a{
+    color: black;
+}
+a:hover{
+    color: orange;
+}
+.jumbotron{
+    background: url(../img/header-img-ylw.png), url(../img/polygon-header-ylw.svg), linear-gradient(180deg, #F8F4DE 0%, rgba(255, 255, 255, 0) 100%);
+    background-size: 65%, 30%, auto;
+    background-position: right 20%, left, center;
+    background-repeat: no-repeat;
+}
+.title-underline:before{
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    background: linear-gradient(90deg, rgba(196, 196, 196, 0) 0%, rgba(219, 187, 45, 0.73) 23.2%, rgba(196, 196, 196, 0) 100%);
+}
+.title-underline-left:before{
+    width: 50vw;
+    height: .3vmin;
+    left: 0;
+}
+.title-underline-center:before{
+    width: 70vw;
+    height: .3vmin;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, rgba(196, 196, 196, 0) 0%, rgba(219, 187, 45, 0.73) 50%, rgba(196, 196, 196, 0) 100%);
+}
+.text-white.title-underline:before{
+    background: linear-gradient(90deg, rgba(196, 196, 196, 0) 0%, rgba(219, 187, 45, 0.73) 50%, rgba(196, 196, 196, 0) 100%);
+}
+#how-we-work{
+    background-image: url(../img/hww/Polygon-hww-ylw.svg), url(../img/hww/Polygon-hww-outline-ylw.svg);
+}
+#advantages{
+    background: linear-gradient(180deg, #F2F2F2 4.53%, rgba(140, 126, 0, 0.78) 63.08%, rgba(67, 56, 1, 0.67) 100%), url(../img/advantages-bg.jpg);
+    color: #111;
+}
+#advantages .card-body{
+    background: linear-gradient(327.57deg, rgb(59, 34, 0) -16.23%, rgba(238, 255, 83, 0) 66.23%);
+   
+}
+#advantages .card-header i{
+    color: rgb(165, 93, 0);
+}
+#how-we-work .card{
+  
+    background: linear-gradient(325deg, rgba(253, 249, 12, 0.329) -16.23%, rgba(245, 221, 7, 0) 66.23%);
+}
+.btn-lined:before {
+    position: absolute;
+    content: "";
+    top: -12%;
+    bottom: -12%;
+    width: 100%;
+    left: 0;
+    background: linear-gradient(90deg, rgba(196, 196, 196, 0) 0%, rgba(252, 216, 14, 0.73) 50.28%, rgba(196, 196, 196, 0) 100%);
+    opacity: 0.4;
+}
+.linear-bg{
+    background: url(../img/hww/Polygon-hww-outline.svg), url(../img/Polygon-linearbg-smallylw.svg), url(../img/Polygon-linearbg-bigylw.svg), linear-gradient(180deg, rgb(255, 254, 177) 0%, #F2F2F2 100%);
+    background-size: 15%, 40%, 50%, auto;
+    background-position: right 20%, left center, right 100vh;
+    background-repeat: no-repeat;
+}
+#step-by-step .one-third:nth-child(1){
+    background-image: linear-gradient(360deg, rgba(81, 39, 0, 0.83) 0%, rgba(0, 52, 81, 0) 100.94%), url(../img/step-by-step/Rectangle6.jpg);
+}
+#step-by-step .one-third:nth-child(2){
+    background-image:  linear-gradient(360deg, rgba(81, 39, 0, 0.83) 0%, rgba(0, 52, 81, 0) 100.94%), url(../img/step-by-step/Rectangle6-1.jpg);
+}
+#step-by-step .one-third:nth-child(3){
+    background-image: linear-gradient(360deg, rgba(81, 39, 0, 0.83) 0%, rgba(0, 52, 81, 0) 100.94%), url(../img/step-by-step/Rectangle6-2.jpg); 
+}
+#step-by-step .one-third span{
+    font-size: 45vh;
+    color: rgba(255, 230, 0, 0.295);
+    top: 35%;
+}
