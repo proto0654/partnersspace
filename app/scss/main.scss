@@ -40,6 +40,11 @@ a:hover {
     height: 16rem;
     background: linear-gradient(126.38deg, #01397A 0%, #00B2EB 100%);
     border-radius: 6px;
+    transition: box-shadow ease-out .8s;
+    &:hover{
+        transition: box-shadow ease-in .4s;
+        box-shadow: 0 5px 20px $accent-blue;
+    }
 }
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: rgb(226, 243, 255);
