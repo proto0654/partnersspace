@@ -32,7 +32,21 @@
 a:hover {
     text-decoration: none;
 }
-
+.bg-primary, .alert-primary{
+    background: linear-gradient(90deg, #23CAFF 0%, #032CFF 186.42%)!important;
+}
+.promocodes .card-blue{
+    width: 12rem;
+    height: 16rem;
+    background: linear-gradient(126.38deg, #01397A 0%, #00B2EB 100%);
+    border-radius: 6px;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgb(226, 243, 255);
+}
+.table-hover tbody tr:hover {
+    background-color: rgb(243, 243, 243);
+}
 .blue-grad {
     background: linear-gradient(90deg, #23CAFF 0%, #032CFF 186.42%);
 }
