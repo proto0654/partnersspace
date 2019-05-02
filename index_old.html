@@ -29,6 +29,7 @@
 
 <body>
   <!-- Custom HTML -->
+
   <div class="container px-0">
     <a class="navbar-brand position-absolute" href="#">
       <img src="app/img/dasboard-corner--logo.svg" width="300" height="90"
@@ -37,21 +38,77 @@
     <div class="d-flex" id="wrapper">
       <!-- Sidebar -->
       <div class="bg-transparent" id="sidebar-wrapper">
-       
+        <div class="list-group list-group-flush">
+          <a href="http://localhost:3000/index.html" class="list-group-item list-group-item-action"><i
+              class="fa fa-envelope p-1" aria-hidden="true"></i>Dashboard</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Shortcuts</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Overview</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Events</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Dashboard</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Shortcuts</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Overview</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Events</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Dashboard</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Shortcuts</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Overview</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Events</a>
+
+        </div>
       </div>
       <!-- /#sidebar-wrapper -->
 
       <!-- Page Content -->
       <div id="page-content-wrapper">
-        <div id="top-nav">
-         
-        </div>
+        <nav class="navbar navbar-expand navbar-light bg-transparent row row-sm-reverse mx-1 mt-4">
+          <p class="pl-sm-3 position-absolute d-flex align-items-center justify-content-center justify-content-lg-start condensed"
+            id="welcome-row">
+            Welcome:
+            John Doe
+            <a href="#">
+              <i class="fa fa-cogs p-1  d-sm-none ml-2" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-sign-out p-1 d-sm-none" aria-hidden="true"></i>
+            </a>
+          </p>
 
-        <div class="container-fluid px-4"><!--Custom Html-->
+          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mt-2 mt-lg-0 ml-sm-auto d-flex align-items-center">
+              <li class="nav-item active d-none d-sm-inline">
+                <a class="nav-link text-secondary d-flex align-items-center" href="#"><i class="fa fa-cogs p-2"
+                    aria-hidden="true"></i>Profile
+                  <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item d-none d-sm-inline">
+                <a class="nav-link text-secondary d-flex align-items-center" href="#"><i class="fa fa-sign-out"
+                    aria-hidden="true"></i>Logout
+                </a>
+              </li>
+              <li class="ml-1 nav-item">
+                <a class="nav-link nav-link--blue hover-shadow--blue" href="#"><i class="fa fa-envelope p-1" aria-hidden="true"></i></a>
+              </li>
+              <li class="ml-1 nav-item">
+                <a class="nav-link nav-link--blue hover-shadow--blue" href="#"><i class="fa fa-bell p-1" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-light d-lg-none mt-2 ml-2 mr-1 rounded-0 p-1 bg-blue border-0" id="menu-toggle">
+            <span class="navbar-toggler-icon text-light"></span>
+          </button>
+        </nav>
 
-
-
-
+        <div class="container-fluid px-4">
           <h1 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left">
             <span>Dashboard</span></h1>
 
@@ -380,27 +437,70 @@
         </div>
 
 
-
-
-
       </div>
     </div>
     <!-- /#page-content-wrapper -->
   </div>
-
-
-  
   <footer id="footer-panel">
-  
+    <div class="container">
+      <div class="row w-100 justify-content-around pt-5 pb-3 mx-0">
+        <div class="col-md-3 px-0 pl-lg-4 text-center text-lg-left my-5 my-sm-0">
+          <nav id="sidebar">
+            <div class="sidebar-header">
+              <h4 class="title-underlined title-underlined--right"><span>Webmasters</span></h4>
+            </div>
+
+            <ul class="list-unstyled components">
+              <li class="active">
+                <a href="register_affilate.php" data-toggle="collapse" aria-expanded="false">Get started</a>
+              </li>
+              <li>
+                <a href="#">How to start earning?</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-3 px-0  text-center mb-5 my-sm-0">
+          <nav id="sidebar">
+            <div class="sidebar-header">
+              <h4 class="title-underlined"><span>Advertizers</span></h4>
+            </div>
+
+            <ul class="list-unstyled components">
+              <li class="active">
+                <a href="register.php" data-toggle="collapse" aria-expanded="false">Make a request</a>
+              </li>
+            </ul>
+          </nav>
+          <img src="app/img/dasboard-corner--logo.svg" width="360" height="auto" alt="" class="ml-2 ml-sm-0">
+          <span class="d-block text-center small mt-3 mb-3">All rights reserved.
+            Partnersspace(c)&nbsp;2019</span>
+        </div>
+        <div class="col-md-3 px-0 text-center text-lg-right my-sm-0">
+          <nav id="sidebar">
+            <div class="sidebar-header">
+              <h4 class="title-underlined title-underlined--left"><span>Contacts</span></h4>
+            </div>
+
+            <a href="mailto: support@partnersspace.com">support@partnersspace.com</a>
+            <br>
+            <a href="mailto: support@partnersspace.com" class="pr-1"><i class="fa fa-skype"></i>
+              Skype</a>
+          </nav>
+
+        </div>
+      </div>
+
+
+    </div>
   </footer>
 
   <!-- /#wrapper -->
   </div>
 
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
@@ -409,16 +509,11 @@
     crossorigin="anonymous"></script>
   <!-- Menu Toggle Script -->
   <script>
-   
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
 
-   
- 
-   
- 
-    $('#sidebar-wrapper').load('sidebar.html');
-    $('#footer-panel').load('footer.html');
-    
-    $('#top-nav').load('top-nav.html');
   </script>
 </body>
 
