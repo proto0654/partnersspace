@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <base href="/"> -->
+
+  <title>Partnersspace - Dashboard</title>
+  <meta name="description" content="" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg" />
+  <link rel="icon" href="app/img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./app/img/favicon/apple-touch-icon-180x180.png" />
+  <!-- Template Basic Images End -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000" />
+  <!-- Custom Browsers Color End -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./app/css/main.min.css" />
+</head>
+
+<body>
+  <!-- Custom HTML -->
+
+  <div class="container px-0">
+    <a class="navbar-brand position-absolute" href="#">
+      <img src="app/img/dasboard-corner--logo.svg" width="300" height="90"
+        class="d-inline-block align-top float-left ml-2 ml-sm-0" alt="" />
+    </a>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="bg-transparent" id="sidebar-wrapper">
+        <div class="list-group list-group-flush">
+          <a href="http://localhost:3000/index.html" class="list-group-item list-group-item-action"><i
+              class="fa fa-envelope p-1" aria-hidden="true"></i>Dashboard</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Shortcuts</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Overview</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Events</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Dashboard</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Shortcuts</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Overview</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Events</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Dashboard</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Shortcuts</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Overview</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell p-1"
+              aria-hidden="true"></i>Events</a>
+
+        </div>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <nav class="navbar navbar-expand navbar-light bg-transparent row row-sm-reverse mx-1 mt-4">
+          <p class="pl-sm-3 position-absolute d-flex align-items-center justify-content-center justify-content-lg-start condensed"
+            id="welcome-row">
+            Welcome:
+            John Doe
+            <a href="#">
+              <i class="fa fa-cogs p-1  d-sm-none ml-2" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-sign-out p-1 d-sm-none" aria-hidden="true"></i>
+            </a>
+          </p>
+
+          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav mt-2 mt-lg-0 ml-sm-auto d-flex align-items-center">
+                  <li class="nav-item active d-none d-sm-inline">
+                    <a class="nav-link text-secondary d-flex align-items-center bg-transparent" href="#"><i class="fa fa-cogs p-2"
+                        aria-hidden="true"></i>Profile
+                      <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item d-none d-sm-inline">
+                    <a class="nav-link text-secondary d-flex align-items-center bg-transparent" href="#"><i class="fa fa-sign-out"
+                        aria-hidden="true"></i>Logout
+                    </a>
+                  </li>
+                  <li class="ml-1 nav-item">
+                    <a class="nav-link nav-link--blue hover-shadow--blue" href="#"><i class="fa fa-envelope p-1" aria-hidden="true"></i></a>
+                  </li>
+                  <li class="ml-1 nav-item">
+                    <a class="nav-link nav-link--blue hover-shadow--blue" href="#"><i class="fa fa-bell p-1" aria-hidden="true"></i></a>
+                  </li>
+                </ul>
+          </div>
+          <button class="btn btn-light d-lg-none mt-2 ml-2 mr-1 rounded-0 p-1 bg-blue border-0" id="menu-toggle">
+            <span class="navbar-toggler-icon text-light"></span>
+          </button>
+        </nav>
+
+        <div class="container-fluid px-4">
+          <h1 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left">
+            <span>Domain Tables</span></h1>
+          <div id="domains-filter">
+            <div class="alert alert-primary text-light h5 py-4 " role="alert">
+              A simple primary alert—check it out!
+            </div>
+            <form class="px-3 px-lg-0 my-4">
+
+              <div class="form-row">
+                <div class="col-12 col-md-4">
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1" class="text-blue">Offer</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>AliExpress</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                    <small id="spacer" class="form-text text-muted">&nbsp;</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1" class="text-blue">Название категории</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Все категории</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1" class="text-blue">&nbsp;</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>DeepLink</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                    <small id="emailHelp" class="form-text text-muted">Вы можете создать <a href="#" class="text-warning">новый DeepLink</a></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1" class="text-blue">Example select</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 d-flex justify-content-start align-items-end">
+                  <button type="submit" class="btn btn-primary px-5 ml-3 mb-3">Filter Domains</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+          <div class="table-responsive-md my-md-5" id="domains-table">
+            <table class="table table-hover table-striped mb-4 border-0" style="min-width: 550px">
+              <thead>
+                <tr class="text-dark">
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Domain</th>
+                  <th scope="col">Created</th>
+                  <th scope="col" style="width: 200px">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td class="d-flex align-items-center"><i class="fa fa-play float-left text-primary mr-4" aria-hidden="true"></i>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>active</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                  <td class="d-flex align-items-center"><i class="fa fa-stop float-left text-warning mr-4" aria-hidden="true"></i>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>stopped</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                  <td class="d-flex align-items-center"><i class="fa fa-play float-left text-primary mr-4" aria-hidden="true"></i>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>active</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                  <td class="d-flex align-items-center"><i class="fa fa-play float-left text-primary mr-4" aria-hidden="true"></i>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>active</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                  <td class="d-flex align-items-center"><i class="fa fa-play float-left text-primary mr-4" aria-hidden="true"></i>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>active</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                  <td class="d-flex align-items-center"><i class="fa fa-play float-left text-primary mr-4" aria-hidden="true"></i>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>active</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                  <td class="d-flex align-items-center"><i class="fa fa-stop float-left text-warning mr-4" aria-hidden="true"></i>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>stopped</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                  <td class="d-flex align-items-center"><i class="fa fa-play float-left text-primary mr-4" aria-hidden="true"></i>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>active</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                  <td class="d-flex align-items-center"><i class="fa fa-play float-left text-primary mr-4" aria-hidden="true"></i>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>active</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                  <td class="d-flex align-items-center"><i class="fa fa-stop float-left text-warning mr-4" aria-hidden="true"></i>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>stopped</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          <div class="row w-100 justify-content-end mx-0">
+              <nav aria-label="...">
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <span class="page-link">Previous</span>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active" aria-current="page">
+                    <span class="page-link">
+                      2
+                      <span class="sr-only">(current)</span>
+                    </span>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+  </div>
+  <footer id="footer-panel">
+    <div class="container">
+      <div class="row w-100 justify-content-around pt-5 pb-3 mx-0">
+        <div class="col-md-3 px-0 pl-lg-4 text-center text-lg-left my-5 my-sm-0">
+          <nav id="sidebar">
+            <div class="sidebar-header">
+              <h4 class="title-underlined title-underlined--right"><span>Webmasters</span></h4>
+            </div>
+
+            <ul class="list-unstyled components">
+              <li class="active">
+                <a href="register_affilate.php" data-toggle="collapse" aria-expanded="false">Get started</a>
+              </li>
+              <li>
+                <a href="#">How to start earning?</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-3 px-0  text-center mb-5 my-sm-0">
+          <nav id="sidebar">
+            <div class="sidebar-header">
+              <h4 class="title-underlined"><span>Advertizers</span></h4>
+            </div>
+
+            <ul class="list-unstyled components">
+              <li class="active">
+                <a href="register.php" data-toggle="collapse" aria-expanded="false">Make a request</a>
+              </li>
+            </ul>
+          </nav>
+          <img src="app/img/dasboard-corner--logo.svg" width="360" height="auto" alt="" class="ml-2 ml-sm-0">
+          <span class="d-block text-center small mt-3 mb-3">All rights reserved.
+            Partnersspace(c)&nbsp;2019</span>
+        </div>
+        <div class="col-md-3 px-0 text-center text-lg-right my-sm-0">
+          <nav id="sidebar">
+            <div class="sidebar-header">
+              <h4 class="title-underlined title-underlined--left"><span>Contacts</span></h4>
+            </div>
+
+            <a href="mailto: support@partnersspace.com">support@partnersspace.com</a>
+            <br>
+            <a href="mailto: support@partnersspace.com" class="pr-1"><i class="fa fa-skype"></i>
+              Skype</a>
+          </nav>
+
+        </div>
+      </div>
+
+
+    </div>
+  </footer>
+
+  <!-- /#wrapper -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+
+  </script>
+</body>
+
+</html>
