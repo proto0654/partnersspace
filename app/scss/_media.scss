@@ -130,6 +130,12 @@
 @include media-breakpoint-up(md) {
     #sidebar-wrapper {
         margin-left: 0;
+        .fa{
+            width: 26px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     #page-content-wrapper {
