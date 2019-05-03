@@ -363,8 +363,25 @@ body {
         }
     }
 }
-
+.promocodes{
+    .nav-tabs {
+        .nav-link{
+            border-color: transparent;
+            &:hover{
+                background-color: transparent;
+            }
+        }
+        border-color: $accent-blue;
+    }
+    .nav-tabs .nav-link.active{
+        background-color: transparent!important;
+        
+        border-bottom-color: $accent-blue;
+        border-bottom-width: 4px;
+    }
+}
 #promo {
+    
     .list-group {
         &-item {
 
