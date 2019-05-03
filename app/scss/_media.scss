@@ -11,6 +11,12 @@
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+    #messages {
+        td{
+            width: 115px;
+            padding: 0;
+        }
+    }
     footer, #promo, #page-content-wrapper {
         overflow: hidden;
     }

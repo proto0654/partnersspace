@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="./app/css/main.min.css" />
 </head>
 
-<body class="promocodes dashboard">
+<body class="messages dashboard">
   <!-- Custom HTML -->
   <div class="container px-0">
     <a class="navbar-brand position-absolute" href="#">
@@ -43,138 +43,58 @@
 
       <!-- Page Content -->
       <div id="page-content-wrapper">
-       <div class="position-relative">
+        <div class="position-relative">
           <div id="top-nav">
-            
-            </div>
-           
-       </div>
+
+          </div>
+
+        </div>
         <div class="container-fluid">
           <!--Custom Html START-->
           <h1 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left">
-            <span>Promocodes</span></h1>
-          <div class="alert alert-primary text-light h5 py-3" role="alert">
-            <a class="d-block text-white" data-toggle="collapse" href="#collapseExample" role="button"
-              aria-expanded="false" aria-controls="collapseExample">
-              Toggle Filter
-            </a>
-          </div>
-
-
-          <div class="collapse show px-3" id="collapseExample">
-            <form class="px-3 px-lg-0">
-
-              <div class="form-row">
-                <div class="col-12 col-md-4">
-
-                  <div class="form-group">
-                    <label for="exampleFormControlSelect1" class="text-blue">Название категории</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                      <option>Все категории</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlTextarea1" class="text-blue">Example textarea</label>
-                    <textarea rows="5" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4">
-                  <div class="form-group">
-                    <label for="formGroupExampleInput1" class="text-blue">From:</label>
-                    <input type="date" name="bday" class="form-control" id="formGroupExampleInput1"
-                      placeholder="Example input">
-
-                  </div>
-                  <div class="form-group">
-                    <label for="formGroupExampleInput1" class="text-blue">To:</label>
-                    <input type="date" name="bday" class="form-control" id="formGroupExampleInput1"
-                      placeholder="Example input">
-
-                  </div>
-
-
-
-                </div>
-                <div class="col-12 col-md-4 d-md-flex flex-wrap">
-                  <div class="form-group">
-                    <label for="exampleFormControlSelect1" class="text-blue">Domain:</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                      <option>www.somedomain.com</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                  <div class="form-group w-50">
-                    <label for="exampleFormCounter" class="text-blue">Percent:</label>
-
-                    <input type="number" name="points" step="1" id="exampleFormCounter" class="form-control">
-                  </div>
-                  <button type="submit" class="btn btn-primary px-5 mb-3 ml-md-auto mt-md-5">Filter Domains</button>
-                </div>
-
-              </div>
-            </form>
-          </div>
-          <nav class="pb-1">
-            <div class="nav nav-tabs px-md-3" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-                aria-controls="nav-home" aria-selected="true">Новые</a>
-              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-                aria-controls="nav-profile" aria-selected="false">Выгодные</a>
-
-            </div>
-          </nav>
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-
-
-                <div class="d-flex flex-wrap justify-content-center py-3">
-                  <div class="card mx-3 mb-3 my-md-4 py-md-3 card-blue">
-                      <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                        <h5 class="card-title text-white mb-3">Promo title<span class="ml-1 badge badge-warning">10%</span></h5>
-                        <h6 class="card-subtitle mb-2 text-light text-center d-block small">5% discount on items from $ 10</h6>
-                        <p class="card-text text-light">Code:<span class="ml-1 badge badge-light">8510</span></p>
-                        <a href="#" class="btn btn-primary small px-4">Copy Code<i class="fa fa-clone ml-2" aria-hidden="true"></i></a>
-                        
+            <span>Messages</span></h1>
+            <table class="table table-striped rounded-top table-hover" id="messages">
+                <tbody>
+                  <tr class="d-flex pb-1 align-items-center justify-content-between">
+                    <th scope="row" class="mx-0 border-0">
+                      <div class="row d-flex flex-wrap">
+                        <div class="col-12 mb-1 text-blue d-block h6">Vinchenzo Costelano</div>
+                        <div class="col-12 small text-secondary d-block">Lorem ipsum dolor sit an proident, sunt in culpa qui officia deserunt mollit a</div>
                       </div>
-                    </div>
-              </div>
-              <div class="row justify-content-center px-5 mt-3 mb-5">
-                  <a href="#" class="btn btn-primary px-5">Load more</a>
-              </div>
-              
-
-            </div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-              
-                <div class="d-flex flex-wrap justify-content-center py-3">
-                    <div class="card mx-3 mb-3 my-md-4 py-md-3 card-blue">
-                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                          <h5 class="card-title text-white mb-3">Promo title<span class="ml-1 badge badge-warning">10%</span></h5>
-                          <h6 class="card-subtitle mb-2 text-light text-center d-block small">5% discount on items from $ 10</h6>
-                          <p class="card-text text-light">Code:<span class="ml-1 badge badge-light">8510</span></p>
-                          <a href="#" class="btn btn-primary small px-4">Copy Code<i class="fa fa-clone ml-2" aria-hidden="true"></i></a>
-                          
+                      </th>
+                    
+                    <td class="border-0 p-0 col-5 col-md-4 col-xl-3 pr-3">
+                      <div class="row mx-0">
+                        <div class="col-sm-7 d-flex align-items-center justify-content-center pb-1 pb-0 px-0"><span class="d-block text-center">30 jan 2019</span></div>
+                        <div class="col-sm-5  d-flex align-items-center justify-content-center">
+                            <a href="#" class="btn btn-primary rounded-0 px-3" title="View messages">View<span class="ml-2 badge badge-light rounded-0">9</span></a>
                         </div>
                       </div>
+                      </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+              <div class="row w-100 justify-content-end mx-0">
+                  <nav aria-label="...">
+                    <ul class="pagination">
+                      <li class="page-item disabled">
+                        <span class="page-link">Previous</span>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active" aria-current="page">
+                        <span class="page-link">
+                          2
+                          <span class="sr-only">(current)</span>
+                        </span>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
-                <div class="row justify-content-center px-5 mt-3 mb-5">
-                    <a href="#" class="btn btn-primary px-5">Load more</a>
-                </div>
-                 
-            
-
-
-            </div>
-
-          </div>
-
 
         </div>
         <!--Custom Html END-->
@@ -207,26 +127,17 @@
     crossorigin="anonymous"></script>
   <!-- Menu Toggle Script -->
   <script>
-    
-
-
-
     $('#top-nav').load('top-nav.html');
-
     $('#sidebar-wrapper').load('sidebar.html');
     $('#footer-panel').load('footer.html');
+    $(document).ready(function () {
+      var e = $('#messages tr');
+      for (var i = 0; i < 7; i++) {
+        e.clone().insertAfter(e);
+      }
+    });
 
 
-
-    
-                $(document).ready(function () {
-                  var e = $('.card');
-                  for (var i = 0; i < 7; i++) {
-                    e.clone().insertAfter(e);
-                  }
-                });
-                
-               
 
   </script>
 </body>
