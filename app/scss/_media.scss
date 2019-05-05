@@ -170,3 +170,10 @@
 
 // ≤1200px
 @include media-breakpoint-up(xl) {}
+@media (min-width: 1600px) { 
+    body.dashboard{
+        .container{
+            max-width: 75vw;
+        }
+    }
+}
