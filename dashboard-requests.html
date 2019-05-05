@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <base href="/"> -->
+
+  <title>Partnersspace - Dashboard</title>
+  <meta name="description" content="" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg" />
+  <link rel="icon" href="app/img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./app/img/favicon/apple-touch-icon-180x180.png" />
+  <!-- Template Basic Images End -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000" />
+  <!-- Custom Browsers Color End -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./app/css/main.min.css" />
+</head>
+
+<body class="requests dashboard">
+  <!-- Custom HTML -->
+  <div class="container px-0">
+    <a class="navbar-brand position-absolute" href="#">
+      <img src="app/img/dasboard-corner--logo.svg" width="300" height="90"
+        class="d-inline-block align-top float-left ml-2 ml-sm-0" alt="" />
+    </a>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="bg-transparent" id="sidebar-wrapper">
+
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div class="position-relative">
+          <div id="top-nav">
+
+          </div>
+
+        </div>
+        <div class="container-fluid">
+          <!--Custom Html START-->
+          <div class="row flex-md-row-reverse mt-4 pl-md-3">
+              <div class="col-md-6 pt-md-3">
+                  <h1 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left h2">
+                    <span>Requests Tables</span></h1>
+                </div>
+            <div class="col-md-6 px-0">
+                <ul class="nav nav-pills row mx-0 align-items-stretch h-100 justify-content-center ps-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item col-3 mb-1">
+                      <a class="nav-link active h-100 rounded-0" id="pills-waiting-tab" data-toggle="pill" href="#pills-waiting" role="tab" aria-controls="pills-waiting" aria-selected="true"><i class="fa fa-clock-o p-1" aria-hidden="true"></i>
+                      Waiting</a>
+                    </li>
+                    <li class="nav-item col-3 mb-1">
+                      <a class="nav-link h-100 rounded-0" id="pills-accepted-tab" data-toggle="pill" href="#pills-accepted" role="tab" aria-controls="pills-accepted" aria-selected="false"><i class="fa fa-check-square-o" aria-hidden="true"></i>
+                      Accepted</a>
+                    </li>
+                    <li class="nav-item col-3 mb-1">
+                      <a class="nav-link h-100 rounded-0" id="pills-declined-tab" data-toggle="pill" href="#pills-declined" role="tab" aria-controls="pills-declined" aria-selected="false"><i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+                      Declined</a>
+                    </li>
+                    <li class="nav-item col-3 mb-1">
+                        <a class="nav-link h-100 rounded-0" id="pills-stopped-tab" data-toggle="pill" href="#pills-stopped" role="tab" aria-controls="pills-stopped" aria-selected="false"><i class="fa fa-stop-circle" aria-hidden="true"></i>
+                        Stopped</a>
+                      </li>
+                  </ul>
+            </div>
+            
+          </div>
+        
+            <div class="tab-content mt-md-5" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-waiting" role="tabpanel" aria-labelledby="pills-waiting-tab">
+                  <h2 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left h2">
+                      <span>Waiting</span></h2>
+                      <table class="table table-striped rounded-top table-hover table-responsive-md" id="waiting">
+                          <thead class="text-white bg-primary rounded-top">
+                              <tr>
+                                <th scope="col">Domain</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Sites</th>
+                                <th scope="col">Geo-targeting</th>
+                                <th scope="col">&nbsp;</th>
+                                <th scope="col">&nbsp;</th>
+                              </tr>
+                            </thead> 
+                        <tbody>
+                             
+                            <tr class="small">
+                              <th scope="row">some-domain.com</th>
+                              <td>Company Name</td>
+                              <td>Somesite.com, randomdomain.com, othersite.ru</td>
+                              <td>541u78584234dsd: Malaysia</td>
+                              <td><select class="form-control table-select" id="exampleFormControlSelect1">
+                                  <option>waiting</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select></td>
+                              <td class="d-flex align-items-center justify-content-between">
+                                
+                                <a href="#" class="btn btn-primary rounded-0 mx-2 small">Send Message</a>
+                                <a href="#">
+                                    <i class="fa fa-check-square-o float-left text-primary ml-2" aria-hidden="true"></i>
+                                </a>
+                              </td>
+                            </tr>
+            
+                          </tbody>
+                        </table>
+                        <div class="row w-100 justify-content-end mx-0">
+                          <nav aria-label="...">
+                            <ul class="pagination">
+                              <li class="page-item disabled">
+                                <span class="page-link">Previous</span>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item active" aria-current="page">
+                                <span class="page-link">
+                                  2
+                                  <span class="sr-only">(current)</span>
+                                </span>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+            
+              </div>
+              <div class="tab-pane fade" id="pills-accepted" role="tabpanel" aria-labelledby="pills-accepted-tab">
+                  <h2 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left h2">
+                      <span>Accepted</span></h2>
+                      <table class="table table-striped rounded-top table-hover table-responsive-md" id="accepted">
+                          <thead class="text-white bg-primary rounded-top">
+                              <tr>
+                                <th scope="col">Domain</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Sites</th>
+                                <th scope="col">Geo-targeting</th>
+                                <th scope="col">&nbsp;</th>
+                                <th scope="col">&nbsp;</th>
+                              </tr>
+                            </thead> 
+                        <tbody>
+                             
+                            <tr class="small">
+                              <th scope="row">some-domain.com</th>
+                              <td>Company Name</td>
+                              <td>Somesite.com, randomdomain.com, othersite.ru</td>
+                              <td>541u78584234dsd: Malaysia</td>
+                              <td><select class="form-control table-select" id="exampleFormControlSelect1">
+                                  <option>waiting</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select></td>
+                              <td class="d-flex align-items-center justify-content-between">
+                                
+                                <a href="#" class="btn btn-primary rounded-0 mx-2 small">Send Message</a>
+                                <a href="#">
+                                    <i class="fa fa-stop float-left text-muted ml-2" aria-hidden="true"></i>
+                                </a>
+                              </td>
+                            </tr>
+            
+                          </tbody>
+                        </table>
+                        <div class="row w-100 justify-content-end mx-0">
+                            <nav aria-label="...">
+                              <ul class="pagination">
+                                <li class="page-item disabled">
+                                  <span class="page-link">Previous</span>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active" aria-current="page">
+                                  <span class="page-link">
+                                    2
+                                    <span class="sr-only">(current)</span>
+                                  </span>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">Next</a>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+              </div>
+              <div class="tab-pane fade" id="pills-declined" role="tabpanel" aria-labelledby="pills-declined-tab">
+                  <h2 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left h2">
+                      <span>Declined</span></h2>
+                      <table class="table table-striped rounded-top table-hover table-responsive-md" id="declined">
+                          <thead class="text-white bg-primary rounded-top">
+                              <tr>
+                                <th scope="col">Domain</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Sites</th>
+                                <th scope="col">Geo-targeting</th>
+                                <th scope="col">&nbsp;</th>
+                                <th scope="col">&nbsp;</th>
+                              </tr>
+                            </thead> 
+                        <tbody>
+                             
+                            <tr class="small">
+                              <th scope="row">some-domain.com</th>
+                              <td>Company Name</td>
+                              <td>Somesite.com, randomdomain.com, othersite.ru</td>
+                              <td>541u78584234dsd: Malaysia</td>
+                              <td><select class="form-control table-select" id="exampleFormControlSelect1">
+                                  <option>waiting</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select></td>
+                              <td class="d-flex align-items-center justify-content-between">
+                                
+                                <a href="#" class="btn btn-primary rounded-0 mx-2 small">Send Message</a>
+                                <a href="#">
+                                    <i class="fa fa-check-square-o float-left text-primary ml-2" aria-hidden="true"></i>
+                                </a>
+                              </td>
+                            </tr>
+            
+                          </tbody>
+                        </table>
+                        <div class="row w-100 justify-content-end mx-0">
+                          <nav aria-label="...">
+                            <ul class="pagination">
+                              <li class="page-item disabled">
+                                <span class="page-link">Previous</span>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item active" aria-current="page">
+                                <span class="page-link">
+                                  2
+                                  <span class="sr-only">(current)</span>
+                                </span>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+              </div>
+              <div class="tab-pane fade" id="pills-stopped" role="tabpanel" aria-labelledby="pills-stopped-tab">
+                  <h2 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left h2">
+                      <span>Stopped</span></h2>
+                      <table class="table table-striped rounded-top table-hover table-responsive-md" id="stopped">
+                          <thead class="text-white bg-primary rounded-top">
+                              <tr>
+                                <th scope="col">Domain</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Sites</th>
+                                <th scope="col">Geo-targeting</th>
+                                <th scope="col">&nbsp;</th>
+                                <th scope="col">&nbsp;</th>
+                              </tr>
+                            </thead> 
+                        <tbody>
+                             
+                            <tr class="small">
+                              <th scope="row">some-domain.com</th>
+                              <td>Company Name</td>
+                              <td>Somesite.com, randomdomain.com, othersite.ru</td>
+                              <td>541u78584234dsd: Malaysia</td>
+                              <td><select class="form-control table-select" id="exampleFormControlSelect1">
+                                  <option>stopped</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select></td>
+                              <td class="d-flex align-items-center justify-content-between">
+                                
+                                <a href="#" class="btn btn-primary rounded-0 mx-2 small">Send Message</a>
+                                <a href="#">
+                                    <i class="fa fa-play float-left text-primary ml-2" aria-hidden="true"></i>
+                                </a>
+                              </td>
+                            </tr>
+            
+                          </tbody>
+                        </table>
+                        <div class="row w-100 justify-content-end mx-0">
+                          <nav aria-label="...">
+                            <ul class="pagination">
+                              <li class="page-item disabled">
+                                <span class="page-link">Previous</span>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item active" aria-current="page">
+                                <span class="page-link">
+                                  2
+                                  <span class="sr-only">(current)</span>
+                                </span>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+              </div>
+            </div>
+
+
+
+        
+
+
+
+
+        </div>
+        <!--Custom Html END-->
+
+
+
+
+
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+  </div>
+
+
+
+  <footer id="footer-panel">
+
+  </footer>
+
+  <!-- /#wrapper -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- Menu Toggle Script -->
+  <script>
+    $('#top-nav').load('top-nav.html');
+    $('#sidebar-wrapper').load('sidebar.html');
+    $('#footer-panel').load('footer.html');
+    $(document).ready(function () {
+
+      var e = $('#waiting tbody>tr');
+      for (var i = 0; i < 7; i++) {
+        e.clone().insertAfter(e);
+      }
+
+      var e = $('#accepted tbody>tr');
+      for (var i = 0; i < 7; i++) {
+        e.clone().insertAfter(e);
+      }
+
+      var e = $('#declined tbody>tr');
+      for (var i = 0; i < 7; i++) {
+        e.clone().insertAfter(e);
+      }
+
+      var e = $('#stopped tbody>tr');
+      for (var i = 0; i < 7; i++) {
+        e.clone().insertAfter(e);
+      }
+
+
+    });
+
+
+
+  </script>
+</body>
+
+</html>

@@ -35,16 +35,16 @@ a:hover {
 .bg-primary, .alert-primary{
     background: linear-gradient(90deg, #23CAFF 0%, #032CFF 186.42%)!important;
 }
-.promocodes .card-blue{
-    width: 12rem;
-    height: 16rem;
-    background: linear-gradient(126.38deg, #01397A 0%, #00B2EB 100%);
-    border-radius: 6px;
-    transition: box-shadow ease-out .8s;
-    &:hover{
-        transition: box-shadow ease-in .4s;
-        box-shadow: 0 5px 20px $accent-blue;
-    }
+
+.table-select{
+    width: 120px;
+}
+thead{
+    background: linear-gradient(0deg, white 0%, rgba(white, 0) 100%);
+    
+}
+table{
+    border-top: inherit;
 }
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: rgb(226, 243, 255);
@@ -105,7 +105,57 @@ body {
         width: 100%;
     }
 }
-
+.ps-pills{
+    .nav-item{
+        padding: 0;
+        min-width: 100px;
+        min-height: 105px;
+        a{
+            &.active{
+                background: radial-gradient(137.58px at 100% 30.37%, #0C689B 0%, #42C3FB 100%);
+                &:before{
+                    background: linear-gradient(58.06deg, rgba(255, 255, 255, 0.65) -21.51%, rgba(255, 255, 255, 0) 65.14%);
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    bottom: 25%;
+                }
+            }
+            text-transform: uppercase;
+            background: radial-gradient(99.36px at 88.62% 100%, #1266A3 0%, #033A6D 100%);
+            margin: 2px;
+            color: #56CCF2;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 12%;
+            padding-bottom: 9%;
+            transition: all .5s ease-out;
+            
+            &:before{
+                background: linear-gradient(30.45deg, rgba(255, 255, 255, 0.31) -4.75%, rgba(255, 255, 255, 0) 67.97%);
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 65%;
+            }
+            &:hover{
+                color: white;
+                box-shadow: rgb(122, 222, 255) 0 5px 20px;
+            }
+            .fa{
+                font-size: 2rem;
+                line-height: 2.4rem;
+                
+            }
+        }
+    }
+}
 .title-underlined {
     span {
         position: relative;
@@ -343,6 +393,18 @@ body {
 
 //</main-nav>
 //<content>
+.promocodes .card-blue{
+    width: 12rem;
+    height: 16rem;
+    background: linear-gradient(126.38deg, #01397A 0%, #00B2EB 100%);
+    border-radius: 6px;
+    transition: box-shadow ease-out .8s;
+    &:hover{
+        transition: box-shadow ease-in .4s;
+        box-shadow: 0 5px 20px $accent-blue;
+    }
+}
+
 #statistic {
     .nav-item {
         flex: 1;
