@@ -52,182 +52,317 @@
         <div class="container-fluid">
           <!--Custom Html START-->
           <h1 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left h2">
-              <span>Offers Tables</span></h1>
-         
-              <div class="alert alert-primary text-light h5 py-3" role="alert">
-                  <a class="d-block text-white" data-toggle="collapse" href="#collapseExample" role="button"
-                    aria-expanded="false" aria-controls="collapseExample">
-                    Toggle Filter
-                  </a>
+            <span>Offers Tables</span></h1>
+
+          <div class="alert alert-primary text-light h5 py-3" role="alert">
+            <a class="d-block text-white" data-toggle="collapse" href="#collapseExample" role="button"
+              aria-expanded="false" aria-controls="collapseExample">
+              Toggle Filter
+            </a>
+          </div>
+
+
+          <div class="collapse px-3 mb-md-4" id="collapseExample">
+            <form class="px-3 px-lg-0">
+
+              <div class="form-row">
+                <div class="col-12 col-md-4">
+
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1" class="text-blue">Название категории</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Все категории</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1" class="text-blue">Example textarea</label>
+                    <textarea rows="5" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
                 </div>
-      
-      
-                <div class="collapse px-3 mb-md-4" id="collapseExample">
-                  <form class="px-3 px-lg-0">
-      
-                    <div class="form-row">
-                      <div class="col-12 col-md-4">
-      
-                        <div class="form-group">
-                          <label for="exampleFormControlSelect1" class="text-blue">Название категории</label>
-                          <select class="form-control" id="exampleFormControlSelect1">
-                            <option>Все категории</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                          </select>
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleFormControlTextarea1" class="text-blue">Example textarea</label>
-                          <textarea rows="5" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-4">
-                        <div class="form-group">
-                          <label for="formGroupExampleInput1" class="text-blue">From:</label>
-                          <input type="date" name="bday" class="form-control" id="formGroupExampleInput1"
-                            placeholder="Example input">
-      
-                        </div>
-                        <div class="form-group">
-                          <label for="formGroupExampleInput1" class="text-blue">To:</label>
-                          <input type="date" name="bday" class="form-control" id="formGroupExampleInput1"
-                            placeholder="Example input">
-      
-                        </div>
-      
-      
-      
-                      </div>
-                      <div class="col-12 col-md-4 d-md-flex flex-wrap">
-                        <div class="form-group">
-                          <label for="exampleFormControlSelect1" class="text-blue">Domain:</label>
-                          <select class="form-control" id="exampleFormControlSelect1">
-                            <option>www.somedomain.com</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                          </select>
-                        </div>
-                        <div class="form-group w-50">
-                          <label for="exampleFormCounter" class="text-blue">Percent:</label>
-      
-                          <input type="number" name="points" step="1" id="exampleFormCounter" class="form-control">
-                        </div>
-                        <button type="submit" class="btn btn-primary px-5 mb-3 ml-md-auto mt-md-5">Filter Domains</button>
-                      </div>
-      
-                    </div>
-                  </form>
+                <div class="col-12 col-md-4">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput1" class="text-blue">From:</label>
+                    <input type="date" name="bday" class="form-control" id="formGroupExampleInput1"
+                      placeholder="Example input">
+
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput1" class="text-blue">To:</label>
+                    <input type="date" name="bday" class="form-control" id="formGroupExampleInput1"
+                      placeholder="Example input">
+
+                  </div>
+
+
+
                 </div>
-                <div>
-                   <div class="d-flex w-100 justify-content-start justify-content-lg-between flex-wrap">
-                     <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Categories</a>
-                     <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Programs</a>
-                     <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Links</a>
-                     <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Reports</a>
-                     <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Messages</a>
-                     <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Categories</a>
-                     <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Portfolio</a>
-                   </div>
-                   
-                    <table class="table table-responsive-md mt-2 mt-md-4 border-0 borderless" id="offers">
-                      <thead>
-                        <tr>
-                          <th scope="col" class="pt-3 pb-4">Name</th>
-                          <th scope="col" class="pt-3 pb-4">Domain</th>
-                          <th scope="col" class="pt-3 pb-4">Order</th>
-                          <th scope="col" class="pt-3 pb-4">Percent</th>
-                          <th scope="col" class="pt-3 pb-4">Payback</th>
-                          <th scope="col" class="pt-3 pb-4">Cockie</th>
-                          <th scope="col" class="pt-3 pb-4">Rate</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">Aliexpress</th>
-                          <td>www.domain.com</td>
-                          <td>823493</td>
-                          <td>12%</td>
-                          <td>0.8%</td>
-                          <td>6 месяцев</td>
-                          <td>
-                            <div class="row mx-0 star-row">
-                              <div class="col px-0">
-                                <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
-                              </div>
-                              <div class="col px-0">
-                                <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
-                              </div>
-                              <div class="col px-0">
-                                <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
-                              </div>
-                              <div class="col px-0">
-                                <i class="fa fa-star p-1 text-secondary" aria-hidden="true"></i>
-                              </div>
-                              <div class="col px-0">
-                                <i class="fa fa-star p-1 text-secondary" aria-hidden="true"></i>
-                              </div>
-                            </div>
-                            <a href="#" class="offers-btn-info"><i class="fa fa-info" aria-hidden="true"></i></a>
-                          </td>
-                        </tr>
-                       
-                      </tbody>
-                    </table>
-                    <div class="row w-100 justify-content-center justify-content-lg-end mx-0">
-                      <a href="#" class="btn btn-primary px-4">Load More</a>
-                    </div>
-                    <div class="accordion" id="accordionExample">
-                        <div class="card">
-                          <div class="card-header" id="headingOne">
-                            <h2 class="mb-0">
-                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Collapsible Group Item #1
-                              </button>
-                            </h2>
-                          </div>
-                      
-                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                            <div class="card-body">
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Collapsible Group Item #2
-                              </button>
-                            </h2>
-                          </div>
-                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                            <div class="card-body">
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-header" id="headingThree">
-                            <h2 class="mb-0">
-                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Collapsible Group Item #3
-                              </button>
-                            </h2>
-                          </div>
-                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                            <div class="card-body">
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                <div class="col-12 col-md-4 d-md-flex flex-wrap">
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1" class="text-blue">Domain:</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>www.somedomain.com</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group w-50">
+                    <label for="exampleFormCounter" class="text-blue">Percent:</label>
+
+                    <input type="number" name="points" step="1" id="exampleFormCounter" class="form-control">
+                  </div>
+                  <button type="submit" class="btn btn-primary px-5 mb-3 ml-md-auto mt-md-5">Filter Domains</button>
                 </div>
 
-        
+              </div>
+            </form>
+          </div>
+          <div>
+            <div class="d-flex w-100 justify-content-start justify-content-lg-between flex-wrap">
+              <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Categories</a>
+              <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Programs</a>
+              <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Links</a>
+              <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Reports</a>
+              <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Messages</a>
+              <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Categories</a>
+              <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Portfolio</a>
+            </div>
+            
+            <table class="table offers borderless" style="border-collapse:collapse;">
+                <thead>
+                    <tr>
+                        <th scope="col" class="pt-3 pb-4">Name</th>
+                  <th scope="col" class="pt-3 pb-4">Domain</th>
+                  <th scope="col" class="pt-3 pb-4">Order</th>
+                  <th scope="col" class="pt-3 pb-4">Percent</th>
+                  <th scope="col" class="pt-3 pb-4">Payback</th>
+                  <th scope="col" class="pt-3 pb-4">Cockie</th>
+                  <th scope="col" class="pt-3 pb-4">Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr colspan="6" data-toggle="collapse" data-target="#demo1" class="accordion-toggle offers-row">
+                      <th scope="row">Aliexpress</th>
+                      <td>www.domain.com</td>
+                      <td>823493</td>
+                      <td>12%</td>
+                      <td>0.8%</td>
+                      <td>6 месяцев</td>
+                      <td>
+                        <div class="row mx-0 star-row">
+                          <div class="col px-0">
+                            <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
+                          </div>
+                          <div class="col px-0">
+                            <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
+                          </div>
+                          <div class="col px-0">
+                            <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
+                          </div>
+                          <div class="col px-0">
+                            <i class="fa fa-star p-1 text-secondary" aria-hidden="true"></i>
+                          </div>
+                          <div class="col px-0">
+                            <i class="fa fa-star p-1 text-secondary" aria-hidden="true"></i>
+                          </div>
+                        <a href="#" class="offers-btn-info"><i class="fa fa-info" aria-hidden="true"></i></a>
+                        </div>
+                        
+                      </td>
+                    </tr>
+                    <tr class="p">
+                        <td colspan="7" class="hiddenRow">
+                          <div class="accordian-body collapse" id="demo1">
+                            <p>No : <span>1</span></p>
+                            <p>Date : <span>12 Jan 2018</span> </p>
+                            <p>Description : <span>Good</span> </p>
+                            <p>Credit : <span>$150.00</span> </p>
+                            <p>Debit : <span></span></p>
+                            <p>Balance : <span>$150.00</span></p>
+                        </div> 
+                      </td> 
+                    </tr>
+                    <tr data-toggle="collapse" data-target="#demo2" class="accordion-toggle offers-row">
+                        <th scope="row">Aliexpress</th>
+                        <td>www.domain.com</td>
+                        <td>823493</td>
+                        <td>12%</td>
+                        <td>0.8%</td>
+                        <td>6 месяцев</td>
+                        <td>
+                          <div class="row mx-0 star-row">
+                            <div class="col px-0">
+                              <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
+                            </div>
+                            <div class="col px-0">
+                              <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
+                            </div>
+                            <div class="col px-0">
+                              <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
+                            </div>
+                            <div class="col px-0">
+                              <i class="fa fa-star p-1 text-secondary" aria-hidden="true"></i>
+                            </div>
+                            <div class="col px-0">
+                              <i class="fa fa-star p-1 text-secondary" aria-hidden="true"></i>
+                            </div>
+                          <a href="#" class="offers-btn-info"><i class="fa fa-info" aria-hidden="true"></i></a>
+                          </div>
+                          
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" class="hiddenRow">
+                          <div id="demo2" class="accordian-body collapse">
+                            <p>No : <span>2</span></p>
+                            <p>Date : <span>12 Jan 2018</span> </p>
+                            <p>Description : <span>Good</span> </p>
+                            <p>Credit : <span>$150.00</span> </p>
+                            <p>Debit : <span></span></p>
+                            <p>Balance : <span>$150.00</span></p>
+                          </div>
+                        </td>
+                    </tr>
+                
+                    <tr data-toggle="collapse" data-target="#demo3" class="accordion-toggle offers-row">
+                        <th scope="row">Aliexpress</th>
+                  <td>www.domain.com</td>
+                  <td>823493</td>
+                  <td>12%</td>
+                  <td>0.8%</td>
+                  <td>6 месяцев</td>
+                  <td>
+                    <div class="row mx-0 star-row">
+                      <div class="col px-0">
+                        <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
+                      </div>
+                      <div class="col px-0">
+                        <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
+                      </div>
+                      <div class="col px-0">
+                        <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
+                      </div>
+                      <div class="col px-0">
+                        <i class="fa fa-star p-1 text-secondary" aria-hidden="true"></i>
+                      </div>
+                      <div class="col px-0">
+                        <i class="fa fa-star p-1 text-secondary" aria-hidden="true"></i>
+                      </div>
+                    <a href="#" class="offers-btn-info"><i class="fa fa-info" aria-hidden="true"></i></a>
+                    </div>
+                    
+                  </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7"  class="hiddenRow">
+                          <div id="demo3" class="accordian-body collapse">
+                            <p>No : <span>3</span></p>
+                            <p>Date : <span>12 Jan 2018</span> </p>
+                            <p>Description : <span>Good</span> </p>
+                            <p>Credit : <span>$150.00</span> </p>
+                            <p>Debit : <span></span></p>
+                            <p>Balance : <span>$150.00</span></p>
+                          </div>
+                        </td>
+                    </tr>
+    
+                    <tr data-toggle="collapse" data-target="#demo4" class="accordion-toggle offers-row">
+                        <th scope="row">Aliexpress</th>
+                        <td>www.domain.com</td>
+                        <td>823493</td>
+                        <td>12%</td>
+                        <td>0.8%</td>
+                        <td>6 месяцев</td>
+                        <td>
+                          <div class="row mx-0 star-row">
+                            <div class="col px-0">
+                              <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
+                            </div>
+                            <div class="col px-0">
+                              <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
+                            </div>
+                            <div class="col px-0">
+                              <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
+                            </div>
+                            <div class="col px-0">
+                              <i class="fa fa-star p-1 text-secondary" aria-hidden="true"></i>
+                            </div>
+                            <div class="col px-0">
+                              <i class="fa fa-star p-1 text-secondary" aria-hidden="true"></i>
+                            </div>
+                          <a href="#" class="offers-btn-info"><i class="fa fa-info" aria-hidden="true"></i></a>
+                          </div>
+                          
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7"  class="hiddenRow">
+                          <div id="demo4" class="accordian-body collapse">
+                            <p>No : <span>4</span></p>
+                            <p>Date : <span>12 Jan 2018</span> </p>
+                            <p>Description : <span>Good</span> </p>
+                            <p>Credit : <span>$150.00</span> </p>
+                            <p>Debit : <span></span></p>
+                            <p>Balance : <span>$150.00</span></p>
+                          </div>
+                        </td>
+                    </tr>
+    
+                    <tr data-toggle="collapse" data-target="#demo5" class="accordion-toggle offers-row">
+                        <th scope="row">Aliexpress</th>
+                        <td>www.domain.com</td>
+                        <td>823493</td>
+                        <td>12%</td>
+                        <td>0.8%</td>
+                        <td>6 месяцев</td>
+                        <td>
+                          <div class="row mx-0 star-row">
+                            <div class="col px-0">
+                              <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
+                            </div>
+                            <div class="col px-0">
+                              <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
+                            </div>
+                            <div class="col px-0">
+                              <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
+                            </div>
+                            <div class="col px-0">
+                              <i class="fa fa-star p-1 text-secondary" aria-hidden="true"></i>
+                            </div>
+                            <div class="col px-0">
+                              <i class="fa fa-star p-1 text-secondary" aria-hidden="true"></i>
+                            </div>
+                          <a href="#" class="offers-btn-info"><i class="fa fa-info" aria-hidden="true"></i></a>
+                          </div>
+                          
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7"  class="hiddenRow">
+                          <div id="demo5" class="accordian-body collapse">
+                            <p>No : <span>5</span></p>
+                            <p>Date : <span>12 Jan 2018</span> </p>
+                            <p>Description : <span>Good</span> </p>
+                            <p>Credit : <span>$150.00</span> </p>
+                            <p>Debit : <span></span></p>
+                            <p>Balance : <span>$150.00</span></p>
+                          </div>
+                        </td>
+                    </tr>		
+                </tbody>
+            </table>
+            <div class="row w-100 justify-content-center justify-content-lg-end mx-0">
+              <a href="#" class="btn btn-primary px-4">Load More</a>
+            </div>
+
+          </div>
+
+
 
 
 
@@ -266,16 +401,12 @@
     $('#top-nav').load('top-nav.html');
     $('#sidebar-wrapper').load('sidebar.html');
     $('#footer-panel').load('footer.html');
-    $(document).ready(function () {
+    /*$('.accordion-toggle').click(function(){
+	$('.hiddenRow').hide();
+	$(this).next('tr').find('.hiddenRow').show();
+});*/
 
-      var e = $('#offers tbody>tr');
-      for (var i = 0; i < 7; i++) {
-        e.clone().insertAfter(e);
-      }
 
-      
-
-    });
 
 
 
