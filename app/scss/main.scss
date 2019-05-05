@@ -418,20 +418,17 @@ body {
     cursor: pointer;
 }
 [data-toggle='collapse'] th{
-    padding-left: 40px;
     position: relative;
 }
-[data-toggle='collapse'] th:before {   
-    content: "\f139";
-    position: absolute;
+[data-toggle="collapse"] th:before {  
     font-family: Fontawesome;
-    left: 5px;
+    content: "\f139";
   }
   
-  [data-toggle='collapse'].collapsed th:before {
+  [data-toggle="collapse"].collapsed th:before {
     content: "\f13a";
-    font-family: Fontawesome;
   }
+  
 .offers{
     
     .star-row{
@@ -451,7 +448,7 @@ body {
         
      }
         border-collapse: separate;
-        border-spacing: 0 1em;
+        border-spacing: 0 .5em;
         td, th {
             border:none;
             border-spacing: 0 1rem;
