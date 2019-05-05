@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <base href="/"> -->
+
+  <title>Partnersspace - Dashboard</title>
+  <meta name="description" content="" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg" />
+  <link rel="icon" href="app/img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./app/img/favicon/apple-touch-icon-180x180.png" />
+  <!-- Template Basic Images End -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000" />
+  <!-- Custom Browsers Color End -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./app/css/main.min.css" />
+</head>
+
+<body class="offers dashboard">
+  <!-- Custom HTML -->
+  <div class="container px-0">
+    <a class="navbar-brand position-absolute" href="#">
+      <img src="app/img/dasboard-corner--logo.svg" width="300" height="90"
+        class="d-inline-block align-top float-left ml-2 ml-sm-0" alt="" />
+    </a>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="bg-transparent" id="sidebar-wrapper">
+
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div class="position-relative">
+          <div id="top-nav">
+
+          </div>
+
+        </div>
+        <div class="container-fluid">
+          <!--Custom Html START-->
+          <h1 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left h2">
+              <span>Offers Tables</span></h1>
+         
+              <div class="alert alert-primary text-light h5 py-3" role="alert">
+                  <a class="d-block text-white" data-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Toggle Filter
+                  </a>
+                </div>
+      
+      
+                <div class="collapse px-3 mb-md-4" id="collapseExample">
+                  <form class="px-3 px-lg-0">
+      
+                    <div class="form-row">
+                      <div class="col-12 col-md-4">
+      
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1" class="text-blue">Название категории</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Все категории</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1" class="text-blue">Example textarea</label>
+                          <textarea rows="5" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <div class="form-group">
+                          <label for="formGroupExampleInput1" class="text-blue">From:</label>
+                          <input type="date" name="bday" class="form-control" id="formGroupExampleInput1"
+                            placeholder="Example input">
+      
+                        </div>
+                        <div class="form-group">
+                          <label for="formGroupExampleInput1" class="text-blue">To:</label>
+                          <input type="date" name="bday" class="form-control" id="formGroupExampleInput1"
+                            placeholder="Example input">
+      
+                        </div>
+      
+      
+      
+                      </div>
+                      <div class="col-12 col-md-4 d-md-flex flex-wrap">
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1" class="text-blue">Domain:</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option>www.somedomain.com</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                        <div class="form-group w-50">
+                          <label for="exampleFormCounter" class="text-blue">Percent:</label>
+      
+                          <input type="number" name="points" step="1" id="exampleFormCounter" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary px-5 mb-3 ml-md-auto mt-md-5">Filter Domains</button>
+                      </div>
+      
+                    </div>
+                  </form>
+                </div>
+                <div>
+                   <div class="d-flex w-100 justify-content-start justify-content-lg-between flex-wrap">
+                     <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Categories</a>
+                     <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Programs</a>
+                     <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Links</a>
+                     <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Reports</a>
+                     <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Messages</a>
+                     <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Categories</a>
+                     <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Portfolio</a>
+                   </div>
+                   
+                    <table class="table table-responsive-md mt-2 mt-md-4 border-0 borderless" id="offers">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="pt-3 pb-4">Name</th>
+                          <th scope="col" class="pt-3 pb-4">Domain</th>
+                          <th scope="col" class="pt-3 pb-4">Order</th>
+                          <th scope="col" class="pt-3 pb-4">Percent</th>
+                          <th scope="col" class="pt-3 pb-4">Payback</th>
+                          <th scope="col" class="pt-3 pb-4">Cockie</th>
+                          <th scope="col" class="pt-3 pb-4">Rate</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">Aliexpress</th>
+                          <td>www.domain.com</td>
+                          <td>823493</td>
+                          <td>12%</td>
+                          <td>0.8%</td>
+                          <td>6 месяцев</td>
+                          <td>
+                            <div class="row mx-0 star-row">
+                              <div class="col px-0">
+                                <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
+                              </div>
+                              <div class="col px-0">
+                                <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
+                              </div>
+                              <div class="col px-0">
+                                <i class="fa fa-star p-1 text-primary" aria-hidden="true"></i>
+                              </div>
+                              <div class="col px-0">
+                                <i class="fa fa-star p-1 text-secondary" aria-hidden="true"></i>
+                              </div>
+                              <div class="col px-0">
+                                <i class="fa fa-star p-1 text-secondary" aria-hidden="true"></i>
+                              </div>
+                            </div>
+                            <a href="#" class="offers-btn-info"><i class="fa fa-info" aria-hidden="true"></i></a>
+                          </td>
+                        </tr>
+                       
+                      </tbody>
+                    </table>
+                    <div class="row w-100 justify-content-center justify-content-lg-end mx-0">
+                      <a href="#" class="btn btn-primary px-4">Load More</a>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Collapsible Group Item #1
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Collapsible Group Item #2
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Collapsible Group Item #3
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+        
+
+
+
+
+        </div>
+        <!--Custom Html END-->
+
+
+
+
+
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+  </div>
+
+
+
+  <footer id="footer-panel">
+
+  </footer>
+
+  <!-- /#wrapper -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- Menu Toggle Script -->
+  <script>
+    $('#top-nav').load('top-nav.html');
+    $('#sidebar-wrapper').load('sidebar.html');
+    $('#footer-panel').load('footer.html');
+    $(document).ready(function () {
+
+      var e = $('#offers tbody>tr');
+      for (var i = 0; i < 7; i++) {
+        e.clone().insertAfter(e);
+      }
+
+      
+
+    });
+
+
+
+  </script>
+</body>
+
+</html>
