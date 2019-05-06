@@ -123,17 +123,18 @@
             </form>
           </div>
           <div>
-            <div class="d-flex w-100 justify-content-start justify-content-lg-between flex-wrap my-2">
-              <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Categories</a>
-              <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Programs</a>
-              <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Links</a>
-              <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Reports</a>
-              <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Messages</a>
-              <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Categories</a>
-              <a href="#" class="btn btn-primary rounded-0 px-4 m-1">Portfolio</a>
+            <div class="d-flex w-100 justify-content-center justify-content-lg-between flex-wrap my-2 offers-button-row">
+              <a href="#" class="btn btn-light text-dark bg-grey rounded-0 px-4 m-1">Categories</a>
+              <a href="#" class="btn btn-light text-dark bg-grey rounded-0 px-4 m-1">Programs</a>
+              <a href="#" class="btn btn-light text-dark bg-grey rounded-0 px-4 m-1">Links</a>
+              <a href="#" class="btn btn-light text-dark bg-grey rounded-0 px-4 m-1">Reports</a>
+              <a href="#" class="btn btn-light text-dark bg-grey rounded-0 px-4 m-1">Messages</a>
+              <a href="#" class="btn btn-light text-dark bg-grey rounded-0 px-4 m-1">Categories</a>
+              <a href="#" class="btn btn-light text-dark bg-grey rounded-0 px-4 m-1">Portfolio</a>
             </div>
             
-            <table class="table offers borderless">
+           <div class="table-responsive-md">
+              <table class="table offers borderless">
                 <thead>
                     <tr>
                         <th scope="col" class="pt-3 pb-4">Name</th>
@@ -146,7 +147,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                  <tr colspan="6" data-toggle="collapse" data-target="#demo1" class="collapse show accordion-toggle offers-row">
+                  <tr colspan="6" data-toggle="collapse" data-target="#demo1" class="collapse show accordion-toggle offers-row collapsed">
                       <th scope="row">Aliexpress</th>
                       <td>www.domain.com</td>
                       <td>823493</td>
@@ -178,16 +179,51 @@
                     <tr class="p">
                         <td colspan="7" class="hiddenRow">
                           <div class="accordian-body collapse" id="demo1">
-                            <p>No : <span>1</span></p>
-                            <p>Date : <span>12 Jan 2018</span> </p>
-                            <p>Description : <span>Good</span> </p>
-                            <p>Credit : <span>$150.00</span> </p>
-                            <p>Debit : <span></span></p>
-                            <p>Balance : <span>$150.00</span></p>
+                            <div class="row py-3 py-md-4 px-1 px-md-3 px-lg-5">
+                              <div class="col-6">
+                                <h4 class="h6">
+                                 Время подтверждения заказа:
+                                </h4>
+                                <p class="text-blue">
+                                  В среднем 50-70 дней
+                                 </p>
+                                <h4 class="h6">
+                                  Минимальная ставка для веб-мастера:
+                                 </h4>
+                                 
+                                 <div style="font-size: 1.2rem; border-bottom-left-radius:0;" class="badge badge-primary bg-primary text-white p-3   mb-2">3%</div>
+                                 <h4 class="h6">
+                                  Реферальная программа:
+                                 </h4>
+                                 <p class="text-blue">
+                                  5% с дохода привлеченного партнера
+                                  </p>
+                                  <h4 class="h6">
+                                    Время жизни Cookie:
+                                   </h4>
+                                   <p class="text-blue">
+                                    30 дней
+                                    </p>
+                                    <h4 class="h6">
+                                      Геотаргетинг:
+                                     </h4>
+                                     <p class="text-blue">
+                                      Россия
+                                      </p>
+                              </div>
+                              <div class="col-6 d-flex flex-column justify-content-center">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga esse possimus voluptatibus nostrum quia!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, perspiciatis.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam fugiat sunt rem eveniet inventore maxime vitae, repudiandae dolorem.</p>
+                                <div class="row justify-content-end px-4">
+                                  <a href="#" class="px-4 btn btn-primary" title="Subscribe">Subscribe</a>
+                                </div>
+                              </div>
+                            </div>
                         </div> 
                       </td> 
                     </tr>
-                    <tr data-toggle="collapse" data-target="#demo2" class="accordion-toggle offers-row">
+                    <tr data-toggle="collapse" data-target="#demo2" class="accordion-toggle offers-row collapsed">
                         <th scope="row">Aliexpress</th>
                         <td>www.domain.com</td>
                         <td>823493</td>
@@ -219,17 +255,52 @@
                     <tr>
                         <td colspan="7" class="hiddenRow">
                           <div id="demo2" class="accordian-body collapse">
-                            <p>No : <span>2</span></p>
-                            <p>Date : <span>12 Jan 2018</span> </p>
-                            <p>Description : <span>Good</span> </p>
-                            <p>Credit : <span>$150.00</span> </p>
-                            <p>Debit : <span></span></p>
-                            <p>Balance : <span>$150.00</span></p>
+                            <div class="row py-3 py-md-4 px-1 px-md-3 px-lg-5">
+                              <div class="col-6">
+                                <h4 class="h6">
+                                 Время подтверждения заказа:
+                                </h4>
+                                <p class="text-blue">
+                                  В среднем 50-70 дней
+                                 </p>
+                                <h4 class="h6">
+                                  Минимальная ставка для веб-мастера:
+                                 </h4>
+                                 
+                                 <div style="font-size: 1.2rem; border-bottom-left-radius:0;" class="badge badge-primary bg-primary text-white p-3   mb-2">3%</div>
+                                 <h4 class="h6">
+                                  Реферальная программа:
+                                 </h4>
+                                 <p class="text-blue">
+                                  5% с дохода привлеченного партнера
+                                  </p>
+                                  <h4 class="h6">
+                                    Время жизни Cookie:
+                                   </h4>
+                                   <p class="text-blue">
+                                    30 дней
+                                    </p>
+                                    <h4 class="h6">
+                                      Геотаргетинг:
+                                     </h4>
+                                     <p class="text-blue">
+                                      Россия
+                                      </p>
+                              </div>
+                              <div class="col-6 d-flex flex-column justify-content-center">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga esse possimus voluptatibus nostrum quia!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, perspiciatis.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam fugiat sunt rem eveniet inventore maxime vitae, repudiandae dolorem.</p>
+                                <div class="row justify-content-end px-4">
+                                  <a href="#" class="px-4 btn btn-primary" title="Subscribe">Subscribe</a>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </td>
                     </tr>
                 
-                    <tr data-toggle="collapse" data-target="#demo3" class="accordion-toggle offers-row">
+                    <tr data-toggle="collapse" data-target="#demo3" class="accordion-toggle offers-row collapsed">
                         <th scope="row">Aliexpress</th>
                   <td>www.domain.com</td>
                   <td>823493</td>
@@ -261,17 +332,52 @@
                     <tr>
                         <td colspan="7"  class="hiddenRow">
                           <div id="demo3" class="accordian-body collapse">
-                            <p>No : <span>3</span></p>
-                            <p>Date : <span>12 Jan 2018</span> </p>
-                            <p>Description : <span>Good</span> </p>
-                            <p>Credit : <span>$150.00</span> </p>
-                            <p>Debit : <span></span></p>
-                            <p>Balance : <span>$150.00</span></p>
+                            <div class="row py-3 py-md-4 px-1 px-md-3 px-lg-5">
+                              <div class="col-6">
+                                <h4 class="h6">
+                                 Время подтверждения заказа:
+                                </h4>
+                                <p class="text-blue">
+                                  В среднем 50-70 дней
+                                 </p>
+                                <h4 class="h6">
+                                  Минимальная ставка для веб-мастера:
+                                 </h4>
+                                 
+                                 <div style="font-size: 1.2rem; border-bottom-left-radius:0;" class="badge badge-primary bg-primary text-white p-3   mb-2">3%</div>
+                                 <h4 class="h6">
+                                  Реферальная программа:
+                                 </h4>
+                                 <p class="text-blue">
+                                  5% с дохода привлеченного партнера
+                                  </p>
+                                  <h4 class="h6">
+                                    Время жизни Cookie:
+                                   </h4>
+                                   <p class="text-blue">
+                                    30 дней
+                                    </p>
+                                    <h4 class="h6">
+                                      Геотаргетинг:
+                                     </h4>
+                                     <p class="text-blue">
+                                      Россия
+                                      </p>
+                              </div>
+                              <div class="col-6 d-flex flex-column justify-content-center">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga esse possimus voluptatibus nostrum quia!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, perspiciatis.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam fugiat sunt rem eveniet inventore maxime vitae, repudiandae dolorem.</p>
+                                <div class="row justify-content-end px-4">
+                                  <a href="#" class="px-4 btn btn-primary" title="Subscribe">Subscribe</a>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </td>
                     </tr>
     
-                    <tr data-toggle="collapse" data-target="#demo4" class="accordion-toggle offers-row">
+                    <tr data-toggle="collapse" data-target="#demo4" class="accordion-toggle offers-row collapsed">
                         <th scope="row">Aliexpress</th>
                         <td>www.domain.com</td>
                         <td>823493</td>
@@ -303,17 +409,52 @@
                     <tr>
                         <td colspan="7"  class="hiddenRow">
                           <div id="demo4" class="accordian-body collapse">
-                            <p>No : <span>4</span></p>
-                            <p>Date : <span>12 Jan 2018</span> </p>
-                            <p>Description : <span>Good</span> </p>
-                            <p>Credit : <span>$150.00</span> </p>
-                            <p>Debit : <span></span></p>
-                            <p>Balance : <span>$150.00</span></p>
+                            <div class="row py-3 py-md-4 px-1 px-md-3 px-lg-5">
+                              <div class="col-6">
+                                <h4 class="h6">
+                                 Время подтверждения заказа:
+                                </h4>
+                                <p class="text-blue">
+                                  В среднем 50-70 дней
+                                 </p>
+                                <h4 class="h6">
+                                  Минимальная ставка для веб-мастера:
+                                 </h4>
+                                 
+                                 <div style="font-size: 1.2rem; border-bottom-left-radius:0;" class="badge badge-primary bg-primary text-white p-3   mb-2">3%</div>
+                                 <h4 class="h6">
+                                  Реферальная программа:
+                                 </h4>
+                                 <p class="text-blue">
+                                  5% с дохода привлеченного партнера
+                                  </p>
+                                  <h4 class="h6">
+                                    Время жизни Cookie:
+                                   </h4>
+                                   <p class="text-blue">
+                                    30 дней
+                                    </p>
+                                    <h4 class="h6">
+                                      Геотаргетинг:
+                                     </h4>
+                                     <p class="text-blue">
+                                      Россия
+                                      </p>
+                              </div>
+                              <div class="col-6 d-flex flex-column justify-content-center">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga esse possimus voluptatibus nostrum quia!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, perspiciatis.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam fugiat sunt rem eveniet inventore maxime vitae, repudiandae dolorem.</p>
+                                <div class="row justify-content-end px-4">
+                                  <a href="#" class="px-4 btn btn-primary" title="Subscribe">Subscribe</a>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </td>
                     </tr>
     
-                    <tr data-toggle="collapse" data-target="#demo5" class="accordion-toggle offers-row">
+                    <tr data-toggle="collapse" data-target="#demo5" class="accordion-toggle offers-row collapsed">
                         <th scope="row">Aliexpress</th>
                         <td>www.domain.com</td>
                         <td>823493</td>
@@ -345,17 +486,53 @@
                     <tr>
                         <td colspan="7"  class="hiddenRow">
                           <div id="demo5" class="accordian-body collapse">
-                            <p>No : <span>5</span></p>
-                            <p>Date : <span>12 Jan 2018</span> </p>
-                            <p>Description : <span>Good</span> </p>
-                            <p>Credit : <span>$150.00</span> </p>
-                            <p>Debit : <span></span></p>
-                            <p>Balance : <span>$150.00</span></p>
+                            <div class="row py-3 py-md-4 px-1 px-md-3 px-lg-5">
+                              <div class="col-6">
+                                <h4 class="h6">
+                                 Время подтверждения заказа:
+                                </h4>
+                                <p class="text-blue">
+                                  В среднем 50-70 дней
+                                 </p>
+                                <h4 class="h6">
+                                  Минимальная ставка для веб-мастера:
+                                 </h4>
+                                 
+                                 <div style="font-size: 1.2rem; border-bottom-left-radius:0;" class="badge badge-primary bg-primary text-white p-3   mb-2">3%</div>
+                                 <h4 class="h6">
+                                  Реферальная программа:
+                                 </h4>
+                                 <p class="text-blue">
+                                  5% с дохода привлеченного партнера
+                                  </p>
+                                  <h4 class="h6">
+                                    Время жизни Cookie:
+                                   </h4>
+                                   <p class="text-blue">
+                                    30 дней
+                                    </p>
+                                    <h4 class="h6">
+                                      Геотаргетинг:
+                                     </h4>
+                                     <p class="text-blue">
+                                      Россия
+                                      </p>
+                              </div>
+                              <div class="col-6 d-flex flex-column justify-content-center">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga esse possimus voluptatibus nostrum quia!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, perspiciatis.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam fugiat sunt rem eveniet inventore maxime vitae, repudiandae dolorem.</p>
+                                <div class="row justify-content-end px-4">
+                                  <a href="#" class="px-4 btn btn-primary" title="Subscribe">Subscribe</a>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </td>
                     </tr>		
                 </tbody>
             </table>
+           </div>
             <div class="row w-100 justify-content-center justify-content-lg-end mx-0">
               <a href="#" class="btn btn-primary px-4">Load More</a>
             </div>

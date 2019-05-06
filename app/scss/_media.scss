@@ -11,6 +11,12 @@
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+    .offers-button-row{
+        justify-content: center;
+        a{
+            width: 40%;
+        }
+    }
     .ps-pills{
         .nav-item{
             min-width: 20vw;
