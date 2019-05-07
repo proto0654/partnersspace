@@ -330,6 +330,7 @@ body {
         left: 0;
         bottom: -100px;
         border-radius: 5px 5px 0px 0px;
+        max-height: 1000px;
     }
 }
 
@@ -405,7 +406,19 @@ body {
 
 //</main-nav>
 //<content>
-
+.other-programs .col-auto{
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        border: solid 1px $accent-blue;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
 .hedding h1{
 	color:#fff;
 	font-size:25px;
