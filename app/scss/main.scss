@@ -166,6 +166,14 @@ body {
         }
     }
 }
+.input-underlined{
+    background-color: transparent;
+    border-radius: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-color: $accent-blue;
+}
 .title-underlined {
     span {
         position: relative;
