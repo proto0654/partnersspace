@@ -181,7 +181,7 @@ body {
         font-weight: lighter;
         letter-spacing: 1%;
         color: $accent-blue;
-
+        white-space: nowrap;
         &:before {
             content: "";
             position: absolute;
@@ -230,7 +230,6 @@ strong {
 body {
     overflow-x: hidden;
 }
-
 .bg-darkblue {
     background-color: $accent-darkblue;
 }
@@ -248,7 +247,7 @@ body {
     background-color: $hl-blue;
 }
 .text-darkblue{
-    color: $accent-darkblue;
+    color: $accent-darkblue!important;
 }
 
 //<dashboard>
@@ -414,17 +413,20 @@ body {
 
 //</main-nav>
 //<content>
-.other-programs .col-auto{
-    position: relative;
-    &:before{
-        content: "";
-        position: absolute;
-        width: 32px;
-        height: 32px;
-        border: solid 1px $accent-blue;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+.other-programs {
+    max-height: 50px;
+    .col-auto{
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            border: solid 1px $accent-blue;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 }
 .hedding h1{
@@ -519,6 +521,32 @@ body {
     background: linear-gradient(126.38deg, #01397A 0%, #00B2EB 100%);
     border-radius: 6px;
     transition: box-shadow ease-out .8s;
+    &:hover{
+        transition: box-shadow ease-in .4s;
+        box-shadow: 0 5px 20px $accent-blue;
+    }
+}
+.services .card-blue{
+    width: 12rem;
+    height: 16rem;
+    background: radial-gradient(300.43px at 100% 30.37%, #002C45 0%, #0577B8 100%);
+border-radius: 5px;
+    transition: box-shadow ease-out .8s;
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        background: linear-gradient(50.35deg, rgba(255, 255, 255, 0.16) -4.75%, rgba(255, 255, 255, 0) 67.97%);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 46%;
+    }
+    .card-value{
+        height: 55px;
+        width: 55px;
+        border: 1px solid $accent-blue;
+    }
     &:hover{
         transition: box-shadow ease-in .4s;
         box-shadow: 0 5px 20px $accent-blue;
