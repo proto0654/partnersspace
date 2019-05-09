@@ -242,7 +242,9 @@ body {
 .text-blue{
     color: $accent-blue;
 }
-
+.border-blue{
+    border-color: $accent-blue;
+}
 .bg-hl-blue {
     background-color: $hl-blue;
 }
@@ -326,7 +328,7 @@ body {
     -o-transition: margin .25s ease-out;
     transition: margin .25s ease-out;
     position: relative;
-
+    padding-bottom: 200px;
 
     &:before {
         background: linear-gradient(170deg, #29556E -0.69%, #1E87E2 43.67%, rgba(22, 126, 233, 0) 87.11%);
@@ -335,7 +337,7 @@ body {
         top: 0;
         right: 0;
         left: 0;
-        bottom: -100px;
+        bottom: -150px;
         border-radius: 5px 5px 0px 0px;
         max-height: 1000px;
     }
@@ -413,6 +415,24 @@ body {
 
 //</main-nav>
 //<content>
+.banners{
+    .select-banner-wrapper{
+        a{
+            display: block;
+            padding: 10px;
+            width: 31%;
+            max-width: 220px;
+            transition: transform .4s ease-out;
+            img{
+                width: 100%;
+            }
+            &:hover{
+                transition: transform .1s ease-in;
+                transform: scale(1.01);
+            }
+        }
+    }
+}
 .other-programs {
     max-height: 50px;
     .col-auto{

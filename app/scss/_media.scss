@@ -11,6 +11,18 @@
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+    .banners{
+        .select-banner-wrapper{
+            a{
+                display: block;
+                padding: 10px;
+                width: 48%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
     .offers-button-row{
         justify-content: center;
         a{
@@ -141,7 +153,20 @@
 }
 
 // ≥576px
-@include media-breakpoint-down(xs) {}
+@include media-breakpoint-down(xs) {
+    .banners{
+        .select-banner-wrapper{
+            a{
+                display: block;
+                padding: 10px;
+                width: 45%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
 
 
 /*==========  Mobile First  ==========*/
