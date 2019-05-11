@@ -115,6 +115,9 @@ body {
         width: 100%;
     }
 }
+.angle-gradient{
+    background: linear-gradient(125.04deg, #DCEFFF -8.47%, #E4F4FF -8.47%, rgba(222, 239, 255, 0) 38.56%);
+}
 .ps-pills{
     .nav-item{
         padding: 0;
@@ -687,7 +690,7 @@ footer {
     }
 
     a {
-        color: $accent-blue;
+        color: grey;
     }
 }
 

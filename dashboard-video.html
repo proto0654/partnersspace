@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <base href="/"> -->
+
+  <title>Partnersspace - Dashboard Video Generator</title>
+  <meta name="description" content="" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg" />
+  <link rel="icon" href="app/img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./app/img/favicon/apple-touch-icon-180x180.png" />
+  <!-- Template Basic Images End -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000" />
+  <!-- Custom Browsers Color End -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./app/css/main.min.css" />
+</head>
+
+<body class="dashboard video video-generator">
+  <!-- Custom HTML -->
+  <div class="container px-0">
+    <a class="navbar-brand position-absolute" href="#">
+      <img src="app/img/dasboard-corner--logo.svg" width="300" height="90"
+        class="d-inline-block align-top float-left ml-2 ml-sm-0" alt="" />
+    </a>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="bg-transparent" id="sidebar-wrapper">
+
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div id="top-nav">
+
+        </div>
+
+        <div class="container-fluid px-4">
+          <!--Custom Html-->
+          <h1 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left">
+            <span>Add Video</span></h1>
+          <div class="row">
+            <div class="col-lg-8">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/T_P1D_H1et8"></iframe>
+                </div>
+                <a href="#" class="btn btn-primary px-4 my-3">
+<i class="fa fa-trash-o" aria-hidden="true"></i>
+Delete
+                </a>
+                 </div>
+            <div class="col-lg-4">
+              <div>
+                <form>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1" class="text-blue">Select Domain</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>EPN.BIZ</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1" class="text-blue">Select Video</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>https://www.youtube.com/watch?v=MpyJPsz7J40</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+
+                  </div>
+                  <div class="w-100 d-flex justify-content-between">
+                   
+                      <button type="submit" class="btn btn-primary pl-3 pr-4">
+                        <i class="fa fa-folder-open-o mr-1 ml-2" aria-hidden="true"></i>
+                        Select</button>
+                   
+                   
+                      <button type="submit" class="btn btn-primary pl-3 pr-4">
+                        <i class="fa fa-upload mr-1 ml-2" aria-hidden="true"></i>
+                        Upload</button>
+                    
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+  </div>
+
+
+
+  <footer id="footer-panel">
+
+  </footer>
+
+  <!-- /#wrapper -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- Menu Toggle Script -->
+  <script>
+
+
+
+
+
+
+    $('#sidebar-wrapper').load('sidebar.html');
+    $('#footer-panel').load('footer.html');
+
+    $('#top-nav').load('top-nav.html');
+  </script>
+</body>
+
+</html>
