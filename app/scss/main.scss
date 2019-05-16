@@ -475,6 +475,11 @@ body {
 
 //</main-nav>
 //<content>
+.deep-link{
+    .card-col{
+        max-width: 250px;
+    }
+}
 .messages-view {
     .input-group{
         border-radius: 5px;
