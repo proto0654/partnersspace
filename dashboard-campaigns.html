@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <base href="/"> -->
+
+  <title>Partnersspace - Dashboard Campaigns</title>
+  <meta name="description" content="" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg" />
+  <link rel="icon" href="app/img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./app/img/favicon/apple-touch-icon-180x180.png" />
+  <!-- Template Basic Images End -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000" />
+  <!-- Custom Browsers Color End -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./app/css/main.min.css" />
+</head>
+
+<body class="dashboard campaigns">
+  <!-- Custom HTML -->
+  <div class="container px-0">
+    <a class="navbar-brand position-absolute" href="#">
+      <img src="app/img/dasboard-corner--logo.svg" width="300" height="90"
+        class="d-inline-block align-top float-left ml-2 ml-sm-0" alt="" />
+    </a>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="bg-transparent" id="sidebar-wrapper">
+       
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div id="top-nav">
+         
+        </div>
+
+        <div class="container-fluid px-4"><!--Custom Html-->
+          <h1 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left">
+            <span>Campaigns Tables</span></h1>
+        
+          <div class="table-responsive-md my-md-5" id="domains-table">
+            <table class="table table-hover table-striped mb-4 border-0" style="min-width: 550px">
+              <thead>
+                <tr class="text-dark">
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Domain</th>
+                  <th scope="col">Created On</th>
+                  <th scope="col" style="width: 200px">&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="campaign">
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>2019-02-19 08:02:47</td>
+                  <td class="d-flex justify-content-end">
+                    <a href="#" class="btn btn-primary px-4">
+                      <i class="fa fa-trash mr-1" aria-hidden="true"></i>
+                      Delete
+                    </a>
+                  </td>
+                </tr>
+         
+              </tbody>
+            </table>
+
+          </div>
+          <div class="row w-100 justify-content-center justify-content-lg-between mx-0 align-items-center">
+            <a href="#" class="btn btn-primary px-4">
+              <i class="fa fa-plus-square mr-1" aria-hidden="true"></i>
+              Add One More
+            </a>
+              <nav aria-label="..." class="my-4 pb-0 pt-4">
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <span class="page-link">Previous</span>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active" aria-current="page">
+                    <span class="page-link">
+                      2
+                      <span class="sr-only">(current)</span>
+                    </span>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+    </div>
+  
+  
+    
+    <footer id="footer-panel">
+    
+    </footer>
+  
+    <!-- /#wrapper -->
+    </div>
+  
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+     
+  
+     
+   
+     
+   
+      $('#sidebar-wrapper').load('sidebar.html');
+      $('#footer-panel').load('footer.html');
+      
+      $('#top-nav').load('top-nav.html');
+      $(document).ready(function () {
+      var e = $('.campaign');
+      for (var i = 0; i < 5; i++) {
+        e.clone().insertAfter(e);
+      }
+    });
+    </script>
+  </body>
+  
+  </html>
