@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <base href="/"> -->
+
+  <title>Partnersspace - Dashboard Add Campaign</title>
+  <meta name="description" content="" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg" />
+  <link rel="icon" href="app/img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./app/img/favicon/apple-touch-icon-180x180.png" />
+  <!-- Template Basic Images End -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000" />
+  <!-- Custom Browsers Color End -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./app/css/main.min.css" />
+</head>
+
+<body class="add-campaign dashboard">
+  <!-- Custom HTML -->
+  <div class="container px-0">
+    <a class="navbar-brand position-absolute" href="#">
+      <img src="app/img/dasboard-corner--logo.svg" width="300" height="90"
+        class="d-inline-block align-top float-left ml-2 ml-sm-0" alt="" />
+    </a>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="bg-transparent" id="sidebar-wrapper">
+
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div class="position-relative">
+          <div id="top-nav">
+
+          </div>
+
+        </div>
+        <div class="container-fluid">
+          <!--Custom Html START-->
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-9">
+                <h1 class="mt-4 text-center text-md-left text-uppercase title-underlined title-underlined--left h2">
+                    <span>Add Campaign</span></h1>
+            </div>
+          </div>
+          <div>
+            <form class="px-3 px-lg-0">
+              <div class="justify-content-center row my-4 mx-0">
+                <div class="form-group col-12 col-sm-9 px-1">
+                   <label for="exampleFormControlSelect1" class="text-blue text-uppercase mt-3">Name:</label>
+                    <input class="form-control input-underlined" type="text" placeholder="Например реклама KFC">
+                </div>
+                <div class="form-group col-12 col-sm-9 px-1">
+                   <label for="exampleFormControlSelect1" class="text-blue text-uppercase mt-3">Url:</label>
+                   <input class="form-control input-underlined" type="text" placeholder="Add URL campaign">
+                </div>
+                <div class="form-group col-12 col-sm-9 px-1">
+                   <label for="exampleFormControlSelect1" class="text-blue text-uppercase mt-3">Description</label>
+                   <textarea rows="5" class="form-control border-blue bg-transparent" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+
+              </div>
+            
+             
+              <div class="row justify-content-center mx-2 mb-5">
+                
+                <button type="submit" class="btn btn-primary px-4 mx-2">
+                  <i class="fa fa-handshake-o mr-2" aria-hidden="true"></i>
+                  Create Deep Link</but1ton>
+              </div>
+            </form>
+          </div>
+         
+
+
+
+
+
+
+
+        </div>
+        <!--Custom Html END-->
+
+
+
+
+
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+  </div>
+
+
+
+  <footer id="footer-panel">
+
+  </footer>
+
+  <!-- /#wrapper -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- Menu Toggle Script -->
+  <script>
+    $('#top-nav').load('top-nav.html');
+    $('#sidebar-wrapper').load('sidebar.html');
+    $('#footer-panel').load('footer.html');
+    $(document).ready(function () {
+      var e = $('.card-col');
+      for (var i = 0; i < 5; i++) {
+        e.clone().insertAfter(e);
+      }
+    });
+
+
+
+  </script>
+</body>
+
+</html>

@@ -191,7 +191,9 @@ body {
             padding-top: 12%;
             padding-bottom: 9%;
             transition: all .5s ease-out;
-
+            text-align: center;
+            font-size: .8rem;
+            line-height: 110%;
             &:before {
                 background: linear-gradient(30.45deg, rgba(255, 255, 255, 0.31) -4.75%, rgba(255, 255, 255, 0) 67.97%);
                 content: "";
@@ -291,7 +293,6 @@ body {
 .borderless th {
     border: none;
 }
-
 .bg-blue {
     background-color: $accent-blue;
 }
@@ -301,7 +302,7 @@ body {
 }
 
 .border-blue {
-    border-color: $accent-blue;
+    border-color: $accent-blue!important;
 }
 
 .bg-hl-blue {
@@ -475,6 +476,46 @@ body {
 
 //</main-nav>
 //<content>
+body.add-domain{
+    input, select{
+        border-color: transparent;
+        background-color: darken($light, 3%);
+        &.border-blue{
+            border-color: $accent-blue;
+            background-color: #fff;
+            color: lighten($secondary,20%);
+        }
+    }
+    .alert-secondary{
+        background: linear-gradient(270deg, #E4F0FB 0%, rgba(228, 240, 251, 0) 99.37%);
+        border: none;
+        a{
+            text-transform: uppercase;
+            @extend .condensed;
+            font-weight: 300;
+            position: relative;
+            &:before{
+                content: "\f146";
+                font-family: Fontawesome;
+                margin-right: 4px;
+            }
+        
+            &.collapsed{
+                &:before{
+                    content: "\f0fe";
+                }
+            }
+            
+               
+            
+        }
+    }
+    .list-container~p{
+            margin-bottom: 0!important;
+       
+    }
+
+}
 .deep-link{
     .card-col{
         max-width: 250px;
