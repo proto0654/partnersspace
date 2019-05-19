@@ -52,52 +52,176 @@
         <div class="container-fluid">
           <!--Custom Html START-->
           <div class="row flex-md-row-reverse mt-4 pl-md-3">
-              <div class="col-md-6 col-lg-7 pt-md-3">
-                  <h1 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left h2">
-                    <span>User Profile</span></h1>
-                </div>
+            <div class="col-md-6 col-lg-7 pt-md-3">
+              <h1 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left h2">
+                <span>User Profile</span></h1>
+            </div>
             <div class="col-md-6 col-lg-5 px-0">
-                <ul class="nav nav-pills row mx-0 align-items-stretch h-100 justify-content-center ps-pills" id="pills-tab" role="tablist">
-                    <li class="nav-item col-4 mb-1">
-                      <a class="nav-link active h-100 rounded-0" id="pills-waiting-tab" data-toggle="pill" href="#pills-waiting" role="tab" aria-controls="pills-waiting" aria-selected="true"><i class="fa fa-user" aria-hidden="true"></i>
-                      Accaunt Profile</a>
-                    </li>
-                    <li class="nav-item col-4 mb-1">
-                      <a class="nav-link h-100 rounded-0" id="pills-accepted-tab" data-toggle="pill" href="#pills-accepted" role="tab" aria-controls="pills-accepted" aria-selected="false"><i class="fa fa-address-card-o" aria-hidden="true"></i>
-                      Account Info</a>
-                    </li>
-                    <li class="nav-item col-4 mb-1">
-                      <a class="nav-link h-100 rounded-0" id="pills-declined-tab" data-toggle="pill" href="#pills-declined" role="tab" aria-controls="pills-declined" aria-selected="false"><i class="fa fa-cog" aria-hidden="true"></i>
-                      Account Configuration</a>
-                    </li>
-                  </ul>
+              <ul class="nav nav-pills row mx-0 align-items-stretch h-100 justify-content-center ps-pills"
+                id="pills-tab" role="tablist">
+                <li class="nav-item col-4 mb-1">
+                  <a class="nav-link active h-100 rounded-0" id="pills-waiting-tab" data-toggle="pill"
+                    href="#pills-waiting" role="tab" aria-controls="pills-waiting" aria-selected="true"><i
+                      class="fa fa-user" aria-hidden="true"></i>
+                    Accaunt Profile</a>
+                </li>
+                <li class="nav-item col-4 mb-1">
+                  <a class="nav-link h-100 rounded-0" id="pills-accepted-tab" data-toggle="pill" href="#pills-accepted"
+                    role="tab" aria-controls="pills-accepted" aria-selected="false"><i class="fa fa-address-card-o"
+                      aria-hidden="true"></i>
+                    Account Info</a>
+                </li>
+                <li class="nav-item col-4 mb-1">
+                  <a class="nav-link h-100 rounded-0" id="pills-declined-tab" data-toggle="pill" href="#pills-declined"
+                    role="tab" aria-controls="pills-declined" aria-selected="false"><i class="fa fa-cog"
+                      aria-hidden="true"></i>
+                    Account Configuration</a>
+                </li>
+              </ul>
             </div>
-            
+
           </div>
-        
-            <div class="tab-content mt-md-5" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-waiting" role="tabpanel" aria-labelledby="pills-waiting-tab">
-                  <h2 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left h2">
-                      <span>Accaunt Profile</span></h2>
-                     
-            
-              </div>
-              <div class="tab-pane fade" id="pills-accepted" role="tabpanel" aria-labelledby="pills-accepted-tab">
-                  <h2 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left h2">
-                      <span>Account Info</span></h2>
-                     
-              </div>
-              <div class="tab-pane fade" id="pills-declined" role="tabpanel" aria-labelledby="pills-declined-tab">
-                  <h2 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left h2">
-                      <span>Account Configuration</span></h2>
-                     
-              </div>
-              
+
+          <div class="tab-content mt-md-5 px-2 px-md-4" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-waiting" role="tabpanel"
+              aria-labelledby="pills-waiting-tab">
+              <h2 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left h2">
+                <span>Accaunt Profile</span></h2>
+              <form class="container" id="needs-validation" novalidate>
+
+
+               <div class="form-row my-3">
+                  <div class="col-md-6">
+                      <fieldset disabled>
+                          <div class="form-group">
+                            <label for="disabledTextInput">#ID:</label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="2492331">
+                          </div>
+                          <div class="form-group">
+                            <label for="disabledSelect">Created On:</label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="2018-10-19 17:25:56">
+                          </div>
+                        
+                        </fieldset>
+                        <div class="form-group">
+                            <label for="disabledSelect">Status:</label>
+                            <select id="disabledSelect" class="form-control">
+                              <option>active</option>
+                            </select>
+                          </div>
+  
+                   </div> 
+                <div class="col-md-6">
+                   
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Login</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="LoginHelp"
+                          placeholder="Login Name">
+                       
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleInputPassword1">E-mail</label>
+                          <input type="email" class="form-control" name="email" required
+                            placeholder="Enter a valid email address">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                 </div>
+                
+               </div>
+
+
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom01">First name</label>
+                    <input type="text" class="form-control border-blue" id="validationCustom01" placeholder="First name"
+                      value="Mark" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Last name</label>
+                    <input type="text" class="form-control border-blue" id="validationCustom02" placeholder="Last name" value="Otto"
+                      required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom03">City</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid city.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationCustom04">State</label>
+                    <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid state.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationCustom05">Zip</label>
+                    <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid zip.
+                    </div>
+                  </div>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    Ваши данные не будут переданы третьим лицам. 
+Заполняя данную форму вы соглашаетесь с политикой конфиденциальности нашего сайта.
+                  </label>
+                </div>
+                <button class="btn btn-primary px-4 my-3 my-md-5" type="submit"><i class="fa fa-pencil-square-o mr-1" aria-hidden="true"></i> Submit changes</button>
+              </form>
+
+
+
+
+              <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function () {
+                  'use strict';
+                  window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                      form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                          event.preventDefault();
+                          event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                      }, false);
+                    });
+                  }, false);
+                })();
+              </script>
+
+            </div>
+            <div class="tab-pane fade" id="pills-accepted" role="tabpanel" aria-labelledby="pills-accepted-tab">
+              <h2 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left h2">
+                <span>Account Info</span></h2>
+
+            </div>
+            <div class="tab-pane fade" id="pills-declined" role="tabpanel" aria-labelledby="pills-declined-tab">
+              <h2 class="mt-4 mb-3 text-uppercase title-underlined title-underlined--left h2">
+                <span>Account Configuration</span></h2>
+
             </div>
 
+          </div>
 
 
-        
+
+
 
 
 
